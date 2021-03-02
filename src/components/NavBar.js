@@ -1,0 +1,61 @@
+import React from "react"
+import { Navbar, Nav, Image } from "react-bootstrap"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import {
+	faFacebookSquare,
+	faLinkedin,
+	faTwitterSquare,
+	faWhatsappSquare
+} from "@fortawesome/free-brands-svg-icons"
+import src from "../Images/IMG_20210126_110122.jpg"
+function NavBar() {
+	return (
+		<div>
+			<Navbar bg="light" expand="lg">
+				<Navbar.Brand href="#home">
+					<Image src={src} roundedCircle width="40" />
+				</Navbar.Brand>
+				<Navbar.Brand href="#home">
+					Murtaja <br /> Adnan
+				</Navbar.Brand>
+				<Navbar.Toggle aria-controls="basic-navbar-nav" />
+				<Navbar.Collapse id="basic-navbar-nav" align="left">
+					<Nav className="mr-auto mr-5">
+						<Navbar.Brand href="#home">Home</Navbar.Brand>
+						<Nav.Link href="#home">Work</Nav.Link>
+						<Nav.Link href="#home">About</Nav.Link>
+					</Nav>
+					<Nav className="ml-auto mr-5">
+						<Nav.Link href="#home">Contact</Nav.Link>
+						<Nav.Link href="#link">
+							<FontAwesomeIcon
+								icon={faFacebookSquare}
+								size="2x"
+								color="#3b5998"
+							/>
+						</Nav.Link>
+						<Nav.Link href="#link">
+							<FontAwesomeIcon icon={faLinkedin} size="2x" color="#0077b5" />
+						</Nav.Link>
+						<Nav.Link href="#link">
+							<FontAwesomeIcon
+								icon={faTwitterSquare}
+								size="2x"
+								color="#1da1f2"
+							/>
+						</Nav.Link>
+						<Nav.Link href="#link">
+							<FontAwesomeIcon
+								icon={faWhatsappSquare}
+								size="2x"
+								color="#25d366"
+							/>
+						</Nav.Link>
+					</Nav>
+				</Navbar.Collapse>
+			</Navbar>
+		</div>
+	)
+}
+
+export default NavBar
