@@ -1,0 +1,39 @@
+.intro-shadow{
+  box-shadow: 20px 20px 20px 10px grey;
+  /* animation-name: shadow;
+  animation-duration: 4s;
+  animation-iteration-count: infinite; */
+}
+/* @keyframes shadow{
+  0%{box-shadow: 10px 10px 10px 10px lightgrey}
+  25%{box-shadow: 15px 15px 15px 10px rgb(175, 185, 114)}
+  50%{box-shadow: 20px 20px 20px 10px rgb(209, 138, 138)}
+  100%{box-shadow: 25px 25px 25px 10px rgb(63, 45, 45)}
+} */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .intro-font-size{
+    font-size: x-large;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .intro-font-size{
+    font-size: xx-large;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .intro-font-size{
+    font-size: xx-large;
+  }
+}
