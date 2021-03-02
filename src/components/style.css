@@ -10,29 +10,38 @@
   50%{box-shadow: 20px 20px 20px 10px rgb(209, 138, 138)}
   100%{box-shadow: 25px 25px 25px 10px rgb(63, 45, 45)}
 } */
-
-/* Extra small devices (phones, 600px and down) */
+.card{
+  height: 15rem;
+}
+.card:hover{
+  transform: scale(1.02);
+}
 @media only screen and (max-width: 600px) {}
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {}
 
-/* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+  .margin-top{
+    margin-top: 115px;
+  }
   .intro-font-size{
     font-size: x-large;
   }
 }
 
-/* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+  .margin-top{
+    margin-top: 115px;
+  }
   .intro-font-size{
     font-size: xx-large;
   }
 }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
+  .margin-top{
+    margin-top: 115px;
+  }
   .intro-font-size{
     font-size: xx-large;
   }
