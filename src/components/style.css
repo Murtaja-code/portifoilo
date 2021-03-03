@@ -10,12 +10,18 @@
   50%{box-shadow: 20px 20px 20px 10px rgb(209, 138, 138)}
   100%{box-shadow: 25px 25px 25px 10px rgb(63, 45, 45)}
 } */
-/* .card{
-  height: 15rem;
-} */
+
 .card:hover{
   transform: scale(1.02);
 }
+.scroll-link{
+  cursor: pointer;
+  color: lightgray;
+}
+.scroll-link:hover{
+  color: black;
+}
+
 @media only screen and (max-width: 600px) {
   .margin-top{
     margin-top: 70px;

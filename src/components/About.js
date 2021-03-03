@@ -4,7 +4,7 @@ import "./style.css"
 
 function About() {
 	return (
-		<Container className="margin-top">
+		<Container className="margin-top" id="about">
 			<h3 align="left" className="mb-4">
 				About
 			</h3>
