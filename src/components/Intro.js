@@ -5,7 +5,7 @@ import "./style.css"
 function Intro() {
 	return (
 		<div>
-			<Container fluid="md" className="text-center">
+			<Container fluid="md" className="text-center" id="home">
 				<Row>
 					<Col xs={12} md={6} className="text-center my-auto intro-font-size">
 						Hi, <br /> My name is Murtaja, <br />I am a full stack web

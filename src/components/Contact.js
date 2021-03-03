@@ -4,7 +4,7 @@ import "./style.css"
 
 function Contact() {
 	return (
-		<Container className="margin-top">
+		<Container className="margin-top" id="contact">
 			<h3>Contact</h3>
 
 			<Row>

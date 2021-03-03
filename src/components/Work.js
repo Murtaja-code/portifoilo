@@ -7,7 +7,7 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons"
 import { faImages } from "@fortawesome/free-solid-svg-icons"
 function Work() {
 	return (
-		<Container className="margin-top">
+		<Container className="margin-top" id="work">
 			<h3 align="left" className="mb-5">
 				Work
 			</h3>
