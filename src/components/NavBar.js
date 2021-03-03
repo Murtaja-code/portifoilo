@@ -5,7 +5,8 @@ import {
 	faFacebookSquare,
 	faLinkedin,
 	faTwitterSquare,
-	faWhatsappSquare
+	faWhatsappSquare,
+	faGithub
 } from "@fortawesome/free-brands-svg-icons"
 import src from "../Images/IMG_20210126_110122.jpg"
 function NavBar() {
@@ -27,6 +28,9 @@ function NavBar() {
 					</Nav>
 					<Nav className="ml-auto mr-5">
 						<Nav.Link href="#home">Contact</Nav.Link>
+						<Nav.Link href="#link">
+							<FontAwesomeIcon icon={faGithub} size="2x" color="#6e5494" />
+						</Nav.Link>
 						<Nav.Link href="#link">
 							<FontAwesomeIcon
 								icon={faFacebookSquare}
