@@ -13,7 +13,7 @@ function Work() {
 			</h3>
 			<CardColumns>
 				{CardData.map((card, i) => (
-					<Card key={i} className="card">
+					<Card key={i} className="work-card">
 						<Card.Body>
 							<Card.Title>
 								<a href={card.link}>{card.title}</a>

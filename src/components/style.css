@@ -10,15 +10,32 @@
   50%{box-shadow: 20px 20px 20px 10px rgb(209, 138, 138)}
   100%{box-shadow: 25px 25px 25px 10px rgb(63, 45, 45)}
 } */
-.card{
+/* .card{
   height: 15rem;
-}
+} */
 .card:hover{
   transform: scale(1.02);
 }
-@media only screen and (max-width: 600px) {}
+@media only screen and (max-width: 600px) {
+  .margin-top{
+    margin-top: 70px;
+  }
+  .about-me-card-h{
+    height: 35rem
+  }
+}
 
-@media only screen and (min-width: 600px) {}
+@media only screen and (min-width: 600px) {
+  .margin-top{
+    margin-top: 70px;
+  }
+  .about-me-card-h{
+    height: 35rem
+  }
+  .work-card{
+    height: 30rem;
+  }
+}
 
 @media only screen and (min-width: 768px) {
   .margin-top{
@@ -26,6 +43,12 @@
   }
   .intro-font-size{
     font-size: x-large;
+  }
+  .about-me-card-h{
+    height: 35rem
+  }
+  .pf-card-h{
+    height: 17rem;
   }
 }
 
@@ -36,6 +59,15 @@
   .intro-font-size{
     font-size: xx-large;
   }
+  .about-me-card-h{
+    height: 31rem
+  }
+  .pf-card-h{
+    height: 15rem;
+  }
+  .work-card{
+    height: 15rem;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -44,5 +76,14 @@
   }
   .intro-font-size{
     font-size: xx-large;
+  }
+  .about-me-card-h{
+    height: 29rem
+  }
+  .pf-card-h{
+    height: 14rem;
+  }
+  .work-card{
+    height: 15rem;
   }
 }
