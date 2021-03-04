@@ -1,6 +1,6 @@
 import "./App.css"
 import About from "./components/About"
-import Contact from "./components/Contact"
+import ContactForm from "./containers/ContactForm"
 import NavBar from "./components/NavBar"
 import Work from "./components/Work"
 import Intro from "./components/Intro"
@@ -35,7 +35,7 @@ function App() {
 			</Button>
 			<Work />
 			<About />
-			<Contact />
+			<ContactForm />
 			<Badge variant="light" className="badge mt-5">
 				designed and developed <br /> by Murtaja Adnan
 			</Badge>

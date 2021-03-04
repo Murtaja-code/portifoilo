@@ -2,7 +2,7 @@ import React from "react"
 import { Container, Button, Form, Row, Col } from "react-bootstrap"
 import "./style.css"
 
-function Contact() {
+function Contact(props) {
 	return (
 		<Container className="margin-top" id="contact">
 			<h3>Contact</h3>
@@ -18,19 +18,34 @@ function Contact() {
 					</p>
 				</Col>
 				<Col xs={12} md={6}>
-					<Form>
+					<Form onSubmit={(e) => props.handleSubmit(e)}>
 						<Form.Group controlId="formBasicPassword">
 							<Form.Label>Your name</Form.Label>
-							<Form.Control type="text" placeholder="Password" />
+							<Form.Control
+								onChange={(e) => props.handleName(e)}
+								value={props.value.name}
+								type="text"
+								placeholder="Password"
+							/>
 						</Form.Group>
 						<Form.Group controlId="formBasicEmail">
 							<Form.Label>Email address</Form.Label>
-							<Form.Control type="email" placeholder="Enter email" />
+							<Form.Control
+								onChange={(e) => props.handleEmail(e)}
+								value={props.value.email}
+								type="email"
+								placeholder="Enter email"
+							/>
 						</Form.Group>
 
 						<Form.Group controlId="exampleForm.ControlTextarea1">
 							<Form.Label>Example textarea</Form.Label>
-							<Form.Control as="textarea" rows={3} />
+							<Form.Control
+								onChange={(e) => props.handleText(e)}
+								value={props.value.text}
+								as="textarea"
+								rows={3}
+							/>
 						</Form.Group>
 						<Button variant="primary" type="submit">
 							Submit
