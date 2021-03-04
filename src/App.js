@@ -21,10 +21,8 @@ function App() {
 			document.body.scrollTop > 400 ||
 			document.documentElement.scrollTop > 400
 		) {
-			console.log("d")
 			document.getElementById("scroll").className = "scroll-t-btn"
 		} else {
-			console.log("s")
 			document.getElementById("scroll").className = "hide-scroll-t-btn"
 		}
 	}
@@ -32,7 +30,7 @@ function App() {
 		<div>
 			<NavBar />
 			<Intro />
-			<Button id="scroll" onClick={scrollToTop}>
+			<Button id="scroll" onClick={scrollToTop} className="hide-scroll-t-btn">
 				Top
 			</Button>
 			<Work />
