@@ -1,5 +1,7 @@
 import React, { useState } from "react"
 import Contact from "../components/Contact"
+import emailjs, { init } from "emailjs-com"
+init("user_EP1niFzrjn0C8VpbdDmuU")
 function ContactForm() {
 	const [name, setName] = useState("")
 	const [email, setEmail] = useState("")
@@ -16,7 +18,21 @@ function ContactForm() {
 	}
 	const handleSubmit = (e) => {
 		e.preventDefault()
-		console.log("done")
+		var templateParams = {
+			name: "Murtaja",
+			from_name: name,
+			from_email: email,
+			message: text
+		}
+
+		emailjs.send("service_14xycl8", "template_khn7z6c", templateParams).then(
+			function (response) {
+				console.log("SUCCESS!", response.status, response.text)
+			},
+			function (error) {
+				console.log("FAILED...", error)
+			}
+		)
 		setText("")
 		setEmail("")
 		setName("")
