@@ -14,7 +14,9 @@ function Contact(props) {
 						Are you interested in my work and have other suggestions? <br /> Do
 						you have a project that could use my skills? <br /> Do you want to
 						hire me? <br />
-						then please drop a message and let’s chat!
+						then please drop a message and let’s chat! <br />
+						<br />
+						<strong>Email</strong>: murtajaadnan7@gmail.com
 					</p>
 				</Col>
 				<Col xs={12} md={6}>
@@ -25,7 +27,7 @@ function Contact(props) {
 								onChange={(e) => props.handleName(e)}
 								value={props.value.name}
 								type="text"
-								placeholder="Password"
+								placeholder="type your name..."
 							/>
 						</Form.Group>
 						<Form.Group controlId="formBasicEmail">
@@ -34,7 +36,7 @@ function Contact(props) {
 								onChange={(e) => props.handleEmail(e)}
 								value={props.value.email}
 								type="email"
-								placeholder="Enter email"
+								placeholder="type your email address"
 							/>
 						</Form.Group>
 
@@ -45,6 +47,7 @@ function Contact(props) {
 								value={props.value.text}
 								as="textarea"
 								rows={3}
+								placeholder="type your message..."
 							/>
 						</Form.Group>
 						<Button variant="primary" type="submit">

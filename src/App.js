@@ -6,6 +6,8 @@ import Work from "./components/Work"
 import Intro from "./components/Intro"
 import { Badge, Button } from "react-bootstrap"
 import { animateScroll as scroll } from "react-scroll"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faArrowUp } from "@fortawesome/free-solid-svg-icons"
 
 function App() {
 	const scrollToTop = () => {
@@ -31,7 +33,7 @@ function App() {
 			<NavBar />
 			<Intro />
 			<Button id="scroll" onClick={scrollToTop} className="hide-scroll-t-btn">
-				Top
+				Top <FontAwesomeIcon icon={faArrowUp} size="sm" color="#fff" />
 			</Button>
 			<Work />
 			<About />
