@@ -7,12 +7,12 @@ import "./style.css"
 function Contact(props) {
 	return (
 		<Container className="margin-top" id="contact">
-			<h3>Contact</h3>
+			<h3 className="f-title">Contact</h3>
 
 			<Row>
 				<Col xs={12} md={6} className="my-auto">
 					<Rotate top left>
-						<div>
+						<div className="intro-font">
 							<h4>Would like to know more!</h4>
 							<p className="ml-2 ">
 								Are you interested in my work and have other suggestions? <br />{" "}
@@ -32,6 +32,7 @@ function Contact(props) {
 								<Form.Group controlId="formBasicPassword">
 									<Form.Label>Your name</Form.Label>
 									<Form.Control
+										className="form-border"
 										onChange={(e) => props.handleName(e)}
 										value={props.value.name}
 										type="text"
@@ -41,6 +42,7 @@ function Contact(props) {
 								<Form.Group controlId="formBasicEmail">
 									<Form.Label>Email address</Form.Label>
 									<Form.Control
+										className="form-border"
 										onChange={(e) => props.handleEmail(e)}
 										value={props.value.email}
 										type="email"
@@ -51,6 +53,7 @@ function Contact(props) {
 								<Form.Group controlId="exampleForm.ControlTextarea1">
 									<Form.Label>Example textarea</Form.Label>
 									<Form.Control
+										className="form-border"
 										onChange={(e) => props.handleText(e)}
 										value={props.value.text}
 										as="textarea"
@@ -59,7 +62,7 @@ function Contact(props) {
 									/>
 								</Form.Group>
 								<Button
-									variant="primary"
+									variant="outline-secondary"
 									type="submit"
 									disabled={
 										props.value.name === "" ||

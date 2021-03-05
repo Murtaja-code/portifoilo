@@ -38,13 +38,14 @@ function Work() {
 	}
 	return (
 		<Container className="margin-top" id="work">
-			<h3 align="left" className="mb-5">
+			<h3 align="left" className="mb-5 f-title">
 				Work
 			</h3>
 			<CardColumns>
 				{cards.map((card, i) => (
 					<Fade left key={i}>
 						<Card className="work-card">
+							<Card.Img variant="top" src={card.img} />
 							<Card.Body>
 								<Card.Title>
 									<a href={card.link}>{card.title}</a>
@@ -64,11 +65,11 @@ function Work() {
 				))}
 			</CardColumns>
 			{num === 2 ? (
-				<Button variant="primary" onClick={handleClick}>
+				<Button variant="outline-info" onClick={handleClick}>
 					Show more..
 				</Button>
 			) : (
-				<Button variant="primary" onClick={() => handleClick(2)}>
+				<Button variant="outline-info" onClick={() => handleClick(2)}>
 					Show less
 				</Button>
 			)}

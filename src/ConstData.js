@@ -10,8 +10,8 @@ const CardData = [
 			"it is a reference for all iraqi students who would like to info about a specific unviersity or collage or department or institute",
 		tools:
 			"python and django framework for the backend and HTML, CSS JS and vue.js for the frontend",
-		link: "#",
-		repo: "#"
+		link: "https://upbeat-newton-10dc5b.netlify.app/",
+		repo: "https://github.com/Murtaja-code/iraqi-student-frontend"
 	},
 	{
 		img: collageScore,

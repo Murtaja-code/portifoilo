@@ -5,29 +5,26 @@ import Fade from "react-reveal/Fade"
 function About() {
 	return (
 		<Container className="margin-top" id="about">
-			<h3 align="left" className="mb-4">
+			<h3 align="left" className="mb-4 f-title">
 				About
 			</h3>
 			<Row>
 				<Col xs={12} md={6}>
 					<Fade left>
-						<Card border="success" className="mb-3 about-me-card-h">
+						<Card border="white" className="mb-3 about-me-card-h about-me-col">
 							<Card.Body>
-								<Card.Title>About me</Card.Title>
-								<Card.Text>
-									Life is my favorite art project. Whether I'm working with a
-									world-class team building a complex application, creating
-									funky illustrations, or designing my home office, I see
-									everything I do as an opportunity for authentic creative
-									self-expression. If you're feeling that vibe, we'll get along!
-									I live a moderately nomadic lifestyle and prefer to move with
-									the sun. My perfect life includes a house within walking
-									distance to a nice beach with waves, freedom to work where and
-									when I like, and a like-minded tribe of people surrounding me.
-									nomadic lifestyle and prefer to move with the sun. My perfect
-									life includes a house within walking distance to a nice beach
-									with waves, freedom to work where and when I like, and a
-									like-minded tribe of people surrounding me.
+								<Card.Title className="f-card-title f-card-col">
+									About me
+								</Card.Title>
+								<Card.Text className="f-card-title">
+									I am Murtaja Adnan, graduated from Baghdad Oil Traning
+									Institute with diploma, but my love goes to computer science
+									and web development particularly. I like designing things and
+									making them alive in the browser. <br />
+									Helping others is a great deal of importance to me. <br />
+									I beleive in equality between races, genders.
+									<br /> Besides I am a bodybuilder who loves traning very much
+									and it is a part of my life.
 								</Card.Text>
 							</Card.Body>
 						</Card>
@@ -37,18 +34,17 @@ function About() {
 					<Row>
 						<Col xs={12}>
 							<Fade right>
-								<Card border="success" className="pf-card-h mb-3">
+								<Card border="white" className="pf-card-h mb-3 about-me-col">
 									<Card.Body>
-										<Card.Title>
+										<Card.Title className="f-card-title f-card-col">
 											Projects and opportunities I'm interested in
 										</Card.Title>
-										<Card.Text>
-											1.Software that enables creators. Think GitLab, GitHub,
-											Figma, Miro, Procreate, Affinity and the like.
+										<Card.Text className="f-card-title">
+											1.porjects that make real change in life.
 											<br />
-											2.Digital illustration projects.
+											2.Buiding APIS.
 											<br />
-											3.Creative surface design.
+											3.Building frontend web apps.
 										</Card.Text>
 									</Card.Body>
 								</Card>
@@ -58,14 +54,16 @@ function About() {
 					<Row>
 						<Col xs={12}>
 							<Fade right>
-								<Card border="success" className="pf-card-h">
+								<Card border="white" className="pf-card-h about-me-col">
 									<Card.Body>
-										<Card.Title>Fave languages and frameworks</Card.Title>
-										<Card.Text className="mt-2 mb-5">
+										<Card.Title className="f-card-title f-card-col">
+											languages and frameworks
+										</Card.Title>
+										<Card.Text className="mt-2 mb-5" className="f-card-title">
 											python and django framework.
 										</Card.Text>
-										<Card.Text>
-											HTML , CSS , JS vue.js and react.js framworks.
+										<Card.Text className="f-card-title">
+											HTML, CSS, JS, vue.js and react.js framworks.
 										</Card.Text>
 									</Card.Body>
 								</Card>
