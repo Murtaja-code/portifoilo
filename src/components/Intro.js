@@ -16,7 +16,7 @@ function Intro() {
 
 					<Col xs={12} md={6}>
 						<Image
-							className="intro-shadow"
+							className="intro-shadow mt-3"
 							src={src}
 							roundedCircle
 							width="300"

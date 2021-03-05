@@ -29,7 +29,7 @@ function App() {
 		}
 	}
 	return (
-		<div>
+		<div className="bg-color">
 			<NavBar />
 			<Intro />
 			<Button id="scroll" onClick={scrollToTop} className="hide-scroll-t-btn">

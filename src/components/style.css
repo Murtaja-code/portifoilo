@@ -1,3 +1,20 @@
+@media only screen and (max-width: 992px) {
+  .nav-name-hide{
+    display: none;
+  }
+}
+.nav-name-font{
+  font-family: 'Aclonica';
+}
+.scroll-link{
+  cursor: pointer;
+  font-family:arial;
+  color: gray;
+}
+.scroll-link:hover{
+  color: black;
+}
+
 .intro-shadow{
   box-shadow: 20px 20px 20px 10px grey;
   /* animation-name: shadow;
@@ -13,13 +30,6 @@
 
 .card:hover{
   transform: scale(1.02);
-}
-.scroll-link{
-  cursor: pointer;
-  color: lightgray;
-}
-.scroll-link:hover{
-  color: black;
 }
 
 @media only screen and (max-width: 600px) {
