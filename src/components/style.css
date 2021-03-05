@@ -1,27 +1,84 @@
-.intro-shadow{
-  box-shadow: 20px 20px 20px 10px grey;
-  /* animation-name: shadow;
-  animation-duration: 4s;
-  animation-iteration-count: infinite; */
-}
-/* @keyframes shadow{
-  0%{box-shadow: 10px 10px 10px 10px lightgrey}
-  25%{box-shadow: 15px 15px 15px 10px rgb(175, 185, 114)}
-  50%{box-shadow: 20px 20px 20px 10px rgb(209, 138, 138)}
-  100%{box-shadow: 25px 25px 25px 10px rgb(63, 45, 45)}
-} */
+@import url('https://fonts.googleapis.com/css?family=Charm');
+@import url('https://fonts.googleapis.com/css?family=Amita');
+@import url('https://fonts.googleapis.com/css?family=Inconsolata');
 
-.card:hover{
-  transform: scale(1.02);
+
+@media only screen and (max-width: 992px) {
+  .nav-name-hide{
+    display: none;
+  }
 }
+.nav-name-font{
+  font-family: 'Charm';
+}
+.f-trans{
+  transition: font-size .7s;
+}
+.f-hi:hover{
+  font-size: 2em;
+  color: pink;
+}
+.f-i:hover{
+  font-size: 20px;
+  color: pink;
+}
+.f-my:hover{
+  font-size: 3rem;
+  color: pink;
+}
+.f-t:hover{
+  font-size: 20px;
+  color: pink;
+}
+.f-lo:hover{
+  font-size: 20px;
+  color: pink;
+}
+.f-c:hover{
+  font-size: 20px;
+  color: pink;
+}
+
 .scroll-link{
   cursor: pointer;
-  color: lightgray;
+  font-family:arial;
+  color: gray;
 }
 .scroll-link:hover{
   color: black;
 }
+.intro-font{
+  font-family: 'Amita'
+}
 
+.card:hover{
+  transform: scale(1.01);
+}
+.f-title{
+  font-family: 'Charm';
+  font-size: xx-large;
+}
+.f-card-title{
+  font-family: 'Inconsolata';
+}
+.f-card-col{
+  color: rgb(143, 58, 72);
+}
+.about-me-col{
+  background-color: #b4aee8;
+  color: black;
+  border: 10px solid;
+}
+.form-border{
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: groove;
+  background-color: #eee;
+}
+.form-border:focus{
+  outline: none;
+}
 @media only screen and (max-width: 600px) {
   .margin-top{
     margin-top: 70px;
@@ -29,6 +86,7 @@
   .about-me-card-h{
     height: 35rem
   }
+
 }
 
 @media only screen and (min-width: 600px) {
@@ -39,7 +97,7 @@
     height: 35rem
   }
   .work-card{
-    height: 30rem;
+    height: 35rem;
   }
 }
 
@@ -55,6 +113,9 @@
   }
   .pf-card-h{
     height: 17rem;
+  }
+  .work-card{
+    height: 30rem;
   }
 }
 
@@ -72,7 +133,7 @@
     height: 15rem;
   }
   .work-card{
-    height: 15rem;
+    height: 25rem;
   }
 }
 
@@ -90,6 +151,6 @@
     height: 14rem;
   }
   .work-card{
-    height: 15rem;
+    height: 25rem;
   }
 }

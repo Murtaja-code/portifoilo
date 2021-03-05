@@ -1,6 +1,8 @@
+.bg-color{
+  background-color: #f6f6f6;
+}
 
 .badge{
-  /* text-align: center; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,7 +15,7 @@
   position: fixed;
   bottom: 3%;
   z-index: 10;
-  background-color: #4CAF50; 
+  background-color: #b4aee8; 
   border: none;
   color: white;
   padding: 8px;
