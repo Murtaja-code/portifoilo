@@ -10,6 +10,8 @@ import {
 } from "@fortawesome/free-brands-svg-icons"
 import src from "../Images/IMG_20210126_110122.jpg"
 import { Link } from "react-scroll"
+import Spin from "react-reveal/Spin"
+
 import "./style.css"
 function NavBar() {
 	return (
@@ -62,33 +64,43 @@ function NavBar() {
 						</Link>
 					</Nav>
 					<Nav className="ml-auto mr-5">
-						<Nav.Link href="#link">
-							<FontAwesomeIcon icon={faGithub} size="2x" color="#6e5494" />
-						</Nav.Link>
-						<Nav.Link href="#link">
-							<FontAwesomeIcon
-								icon={faFacebookSquare}
-								size="2x"
-								color="#3b5998"
-							/>
-						</Nav.Link>
-						<Nav.Link href="#link">
-							<FontAwesomeIcon icon={faLinkedin} size="2x" color="#0077b5" />
-						</Nav.Link>
-						<Nav.Link href="#link">
-							<FontAwesomeIcon
-								icon={faTwitterSquare}
-								size="2x"
-								color="#1da1f2"
-							/>
-						</Nav.Link>
-						<Nav.Link href="#link">
-							<FontAwesomeIcon
-								icon={faWhatsappSquare}
-								size="2x"
-								color="#25d366"
-							/>
-						</Nav.Link>
+						<Spin>
+							<Nav.Link href="#link">
+								<FontAwesomeIcon icon={faGithub} size="2x" color="#6e5494" />
+							</Nav.Link>
+						</Spin>
+						<Spin>
+							<Nav.Link href="#link">
+								<FontAwesomeIcon
+									icon={faFacebookSquare}
+									size="2x"
+									color="#3b5998"
+								/>
+							</Nav.Link>
+						</Spin>
+						<Spin>
+							<Nav.Link href="#link">
+								<FontAwesomeIcon icon={faLinkedin} size="2x" color="#0077b5" />
+							</Nav.Link>
+						</Spin>
+						<Spin>
+							<Nav.Link href="#link">
+								<FontAwesomeIcon
+									icon={faTwitterSquare}
+									size="2x"
+									color="#1da1f2"
+								/>
+							</Nav.Link>
+						</Spin>
+						<Spin>
+							<Nav.Link href="#link">
+								<FontAwesomeIcon
+									icon={faWhatsappSquare}
+									size="2x"
+									color="#25d366"
+								/>
+							</Nav.Link>
+						</Spin>
 					</Nav>
 				</Navbar.Collapse>
 			</Navbar>

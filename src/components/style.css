@@ -1,11 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Charm');
+@import url('https://fonts.googleapis.com/css?family=Amita');
+
 @media only screen and (max-width: 992px) {
   .nav-name-hide{
     display: none;
   }
 }
 .nav-name-font{
-  font-family: 'Aclonica';
+  font-family: 'Charm';
 }
+.f-trans{
+  transition: font-size .7s;
+}
+.f-hi:hover{
+  font-size: 2em;
+  color: pink;
+}
+.f-i:hover{
+  font-size: 20px;
+  color: pink;
+}
+.f-my:hover{
+  font-size: 3rem;
+  color: pink;
+}
+.f-t:hover{
+  font-size: 20px;
+  color: pink;
+}
+.f-lo:hover{
+  font-size: 20px;
+  color: pink;
+}
+.f-c:hover{
+  font-size: 20px;
+  color: pink;
+}
+
 .scroll-link{
   cursor: pointer;
   font-family:arial;
@@ -14,19 +45,9 @@
 .scroll-link:hover{
   color: black;
 }
-
-.intro-shadow{
-  box-shadow: 20px 20px 20px 10px grey;
-  /* animation-name: shadow;
-  animation-duration: 4s;
-  animation-iteration-count: infinite; */
+.intro-font{
+  font-family: 'Amita'
 }
-/* @keyframes shadow{
-  0%{box-shadow: 10px 10px 10px 10px lightgrey}
-  25%{box-shadow: 15px 15px 15px 10px rgb(175, 185, 114)}
-  50%{box-shadow: 20px 20px 20px 10px rgb(209, 138, 138)}
-  100%{box-shadow: 25px 25px 25px 10px rgb(63, 45, 45)}
-} */
 
 .card:hover{
   transform: scale(1.02);
