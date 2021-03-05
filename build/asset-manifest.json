@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/Murtaja-code/portfoilo/static/css/main.962e3ac5.chunk.css",
+    "main.js": "/Murtaja-code/portfoilo/static/js/main.edfc4f73.chunk.js",
+    "main.js.map": "/Murtaja-code/portfoilo/static/js/main.edfc4f73.chunk.js.map",
+    "runtime-main.js": "/Murtaja-code/portfoilo/static/js/runtime-main.1d5891d9.js",
+    "runtime-main.js.map": "/Murtaja-code/portfoilo/static/js/runtime-main.1d5891d9.js.map",
+    "static/js/2.0e428122.chunk.js": "/Murtaja-code/portfoilo/static/js/2.0e428122.chunk.js",
+    "static/js/2.0e428122.chunk.js.map": "/Murtaja-code/portfoilo/static/js/2.0e428122.chunk.js.map",
+    "static/js/3.cc8b45c0.chunk.js": "/Murtaja-code/portfoilo/static/js/3.cc8b45c0.chunk.js",
+    "static/js/3.cc8b45c0.chunk.js.map": "/Murtaja-code/portfoilo/static/js/3.cc8b45c0.chunk.js.map",
+    "index.html": "/Murtaja-code/portfoilo/index.html",
+    "static/css/main.962e3ac5.chunk.css.map": "/Murtaja-code/portfoilo/static/css/main.962e3ac5.chunk.css.map",
+    "static/js/2.0e428122.chunk.js.LICENSE.txt": "/Murtaja-code/portfoilo/static/js/2.0e428122.chunk.js.LICENSE.txt",
+    "static/media/1.56842c34.jpg": "/Murtaja-code/portfoilo/static/media/1.56842c34.jpg",
+    "static/media/IMG_20210126_110122.c2fda6ad.jpg": "/Murtaja-code/portfoilo/static/media/IMG_20210126_110122.c2fda6ad.jpg",
+    "static/media/collageScore.1fd9e709.png": "/Murtaja-code/portfoilo/static/media/collageScore.1fd9e709.png",
+    "static/media/iraqiStudent.ee0fbfa7.png": "/Murtaja-code/portfoilo/static/media/iraqiStudent.ee0fbfa7.png",
+    "static/media/weather.1bd68d00.png": "/Murtaja-code/portfoilo/static/media/weather.1bd68d00.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1d5891d9.js",
+    "static/js/2.0e428122.chunk.js",
+    "static/css/main.962e3ac5.chunk.css",
+    "static/js/main.edfc4f73.chunk.js"
+  ]
+}
