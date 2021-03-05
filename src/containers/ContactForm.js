@@ -27,15 +27,17 @@ function ContactForm() {
 
 		emailjs.send("service_14xycl8", "template_khn7z6c", templateParams).then(
 			function (response) {
-				console.log("SUCCESS!", response.status, response.text)
+				alert("Success: Your message has been sent!")
 			},
 			function (error) {
-				console.log("FAILED...", error)
+				alert("Failed: Please try again!")
 			}
 		)
-		setText("")
-		setEmail("")
-		setName("")
+		setTimeout(() => {
+			setText("")
+			setEmail("")
+			setName("")
+		}, 1300)
 	}
 	return (
 		<div>
