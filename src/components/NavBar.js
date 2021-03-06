@@ -66,7 +66,7 @@ function NavBar() {
 					</Nav>
 					<Nav className="ml-auto mr-2">
 						<Spin>
-							<Nav.Link href="https://github.com/Murtaja-code">
+							<Nav.Link href="https://github.com/murtaja1">
 								<FontAwesomeIcon icon={faGithub} size="2x" color="#6e5494" />
 							</Nav.Link>
 						</Spin>
