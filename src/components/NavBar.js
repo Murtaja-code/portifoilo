@@ -24,16 +24,16 @@ function NavBar() {
 					Murtaja <br /> Adnan
 				</Navbar.Brand>
 				<Navbar.Toggle aria-controls="basic-navbar-nav" />
-				<Navbar.Collapse id="basic-navbar-nav" align="left">
+				<Navbar.Collapse id="basic-navbar-nav" align="center">
 					<Nav className="mr-auto mr-5">
 						<Link
-							className="mr-2 "
+							className="mr-2"
 							to="home"
 							spy={true}
 							smooth={true}
 							offset={-70}
 							duration={1000}>
-							<span className="scroll-link">Home</span>
+							<Nav className="scroll-link">Home</Nav>
 						</Link>
 						<Link
 							className="mr-2"
@@ -44,6 +44,7 @@ function NavBar() {
 							duration={1000}>
 							<Nav className="scroll-link">Work</Nav>
 						</Link>
+
 						<Link
 							className="mr-2 scroll-link"
 							to="about"
@@ -63,7 +64,7 @@ function NavBar() {
 							<Nav className="scroll-link">Contact</Nav>
 						</Link>
 					</Nav>
-					<Nav className="ml-auto mr-5">
+					<Nav className="ml-auto mr-2">
 						<Spin>
 							<Nav.Link href="https://github.com/Murtaja-code">
 								<FontAwesomeIcon icon={faGithub} size="2x" color="#6e5494" />
