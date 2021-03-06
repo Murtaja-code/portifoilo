@@ -11,7 +11,7 @@ const CardData = [
 		tools:
 			"python and django framework for the backend and HTML, CSS JS and vue.js for the frontend",
 		link: "https://iraqistudent.netlify.app/",
-		repo: "https://github.com/Murtaja-code/iraqi-student-frontend"
+		repo: "https://github.com/murtaja1/iraqi-student-frontend"
 	},
 	{
 		img: collageScore,
@@ -19,8 +19,8 @@ const CardData = [
 		descrption:
 			"A simple site developed to let student find the score of a collage or institute very easily by type the name only.",
 		tools: "HTML, CSS, JS and vue.js framework",
-		link: "https://murtaja-code.github.io/collage_score/",
-		repo: "https://github.com/Murtaja-code/collage_score/tree/master"
+		link: "https://murtaja1.github.io/collage_score/",
+		repo: "https://github.com/murtaja1/collage_score"
 	},
 	{
 		img: weather,
@@ -29,7 +29,7 @@ const CardData = [
 			"A simple site and its purpose is to let people type the location and get the current weather and forecast for the next five days.",
 		tools: "HTML, CSS, JS and react.js framework",
 		link: "https://weatherapp-cpp-team.netlify.app/",
-		repo: "https://github.com/Murtaja-code/weather_app_js"
+		repo: "https://github.com/murtaja1/weather_app_js"
 	}
 ]
 
