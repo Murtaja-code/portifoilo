@@ -6,9 +6,9 @@ import {
 	faLinkedin,
 	faTwitterSquare,
 	faWhatsappSquare,
-	faGithub
+	faGithubSquare,
+	faMediumM
 } from "@fortawesome/free-brands-svg-icons"
-import src from "../Images/IMG_20210126_110122.jpg"
 import { Link } from "react-scroll"
 import Spin from "react-reveal/Spin"
 
@@ -18,10 +18,7 @@ function NavBar() {
 		<div>
 			<Navbar bg="light" expand="lg">
 				<Navbar.Brand>
-					<Image src={src} roundedCircle width="40" />
-				</Navbar.Brand>
-				<Navbar.Brand className="nav-name-hide nav-name-font">
-					Murtaja <br /> Adnan
+					<FontAwesomeIcon icon={faMediumM} size="2x" color="gray" />
 				</Navbar.Brand>
 				<Navbar.Toggle aria-controls="basic-navbar-nav" />
 				<Navbar.Collapse id="basic-navbar-nav" align="center">
@@ -67,7 +64,11 @@ function NavBar() {
 					<Nav className="ml-auto mr-2">
 						<Spin>
 							<Nav.Link href="https://github.com/murtaja1">
-								<FontAwesomeIcon icon={faGithub} size="2x" color="#6e5494" />
+								<FontAwesomeIcon
+									icon={faGithubSquare}
+									size="2x"
+									color="#6e5494"
+								/>
 							</Nav.Link>
 						</Spin>
 						<Spin>

@@ -3,7 +3,7 @@ import { Container, Button, Form, Row, Col } from "react-bootstrap"
 import Rotate from "react-reveal/Rotate"
 
 import "./style.css"
-
+// deconstructe it
 function Contact(props) {
 	return (
 		<Container className="margin-top" id="contact">

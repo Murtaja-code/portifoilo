@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react"
-import { Container, Card, CardColumns, Button } from "react-bootstrap"
+import { Container, Card, CardColumns, Button, Row, Col } from "react-bootstrap"
 import "./style.css"
 import CardData from "../ConstData"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
@@ -37,33 +37,35 @@ function Work() {
 		}
 	}
 	return (
-		<Container className="margin-top" id="work">
+		<Container className="margin-top mb-5" id="work">
 			<h3 align="left" className="mb-5 f-title">
 				Work
 			</h3>
-			<CardColumns>
+			<Row className="pb-3">
 				{cards.map((card, i) => (
-					<Fade left key={i}>
-						<Card className="work-card">
-							<Card.Img variant="top" src={card.img} />
-							<Card.Body>
-								<Card.Title>
-									<a href={card.link}>{card.title}</a>
-									<a href={card.repo} className="pl-3">
-										<FontAwesomeIcon icon={faGithub} size="lg" color="#333" />
-									</a>
-									<a href={card.img} className="ml-2">
-										<FontAwesomeIcon icon={faImages} size="1x" color="#333" />
-									</a>
-								</Card.Title>
+					<Col key={i} xs={12} md={6} lg={4} className="pt-2">
+						<Fade left>
+							<Card className="work">
+								<Card.Img variant="top" src={card.img} />
+								<Card.Body>
+									<Card.Title>
+										<a href={card.link}>{card.title}</a>
+										<a href={card.repo} className="pl-3">
+											<FontAwesomeIcon icon={faGithub} size="lg" color="#333" />
+										</a>
+										<a href={card.img} className="ml-2">
+											<FontAwesomeIcon icon={faImages} size="1x" color="#333" />
+										</a>
+									</Card.Title>
 
-								<Card.Text>{card.descrption}</Card.Text>
-								<small>{card.tools}</small>
-							</Card.Body>
-						</Card>
-					</Fade>
+									<Card.Text>{card.descrption}</Card.Text>
+									<small>{card.tools}</small>
+								</Card.Body>
+							</Card>
+						</Fade>
+					</Col>
 				))}
-			</CardColumns>
+			</Row>
 			{num === 2 ? (
 				<Button variant="outline-info" onClick={handleClick}>
 					Show more..
