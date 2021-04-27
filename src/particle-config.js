@@ -2,7 +2,7 @@ const particlesConfig = {
 	autoPlay: true,
 	background: {
 		color: {
-			value: "#1b262c"
+			value: "#2f2f2f"
 		},
 		image: "",
 		position: "",

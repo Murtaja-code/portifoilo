@@ -1,6 +1,8 @@
 import Particles from "react-tsparticles"
 import particlesConfig from "./particle-config"
 import NavBar from "./components/NavBar/NavBar"
+import Intro from "./components/Intro/Intro"
+
 import "./App.css"
 
 function App() {
@@ -18,6 +20,7 @@ function App() {
 				params={particlesConfig}
 			/>
 			<NavBar />
+			<Intro />
 		</div>
 	)
 }
