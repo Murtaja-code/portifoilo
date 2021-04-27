@@ -1,5 +1,5 @@
 import React from "react"
-import { Box, Typography, useMediaQuery, Grid } from "@material-ui/core"
+import { Box, Typography, Grid } from "@material-ui/core"
 import useStyles from "./Style"
 import TextyAnim from "rc-texty"
 
