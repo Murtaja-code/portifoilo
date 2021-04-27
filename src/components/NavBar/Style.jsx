@@ -1,6 +1,18 @@
 import { makeStyles } from "@material-ui/core/styles"
 
 const useStyles = makeStyles({
+	socialIcons: {
+		fontSize: "40px",
+		transition: "transform .2s",
+		"&:hover": {
+			transform: "scale(1.4)"
+		}
+	},
+	socialIconsMobile: {
+		position: "fixed",
+		bottom: 0,
+		width: "100%"
+	},
 	paper: {
 		background: "#333",
 		height: "100% !important"
@@ -28,6 +40,20 @@ const useStyles = makeStyles({
 		"&:hover": {
 			transform: "scale(1.2)"
 		}
+	},
+	curve: {
+		position: "absolute",
+		left: "0rem",
+		right: "0rem",
+		bottom: "50%",
+		padding: "0.2rem 0rem 1.5rem 0rem",
+		textAlign: "center",
+		backgroundColor: "#4267B2",
+		width: "3.25rem",
+		height: "1.5rem",
+		borderRadius: "100% / 100%",
+		borderTopLeftRadius: "0",
+		borderBottomLeftRadius: "0"
 	}
 })
 
