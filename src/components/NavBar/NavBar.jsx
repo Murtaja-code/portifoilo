@@ -7,7 +7,8 @@ import {
 	List,
 	Drawer,
 	Box,
-	Typography
+	Typography,
+	useMediaQuery
 } from "@material-ui/core"
 import { Menu, Close, Facebook, GitHub, LinkedIn, Twitter } from "@material-ui/icons"
 import useStyles from "./Style"
@@ -19,9 +20,10 @@ const tabs = [
 	{ tab: "About", delay: 300, index: 2 },
 	{ tab: "Contact", delay: 400, index: 3 }
 ]
-function NavBar({ setIndex }) {
+function NavBar({ setIndex, index }) {
 	const classes = useStyles()
 	const [openDrawer, setOpenDrawer] = useState(false)
+	const mobile = useMediaQuery("(max-width: 700px)")
 	const handleDrawer = () => {
 		setOpenDrawer(!openDrawer)
 	}
@@ -30,24 +32,29 @@ function NavBar({ setIndex }) {
 		setIndex(index)
 	}
 	return (
-		<Box mb={30}>
-			<div style={{ overflow: "hidden" }}>
-				<Fade left delay={500}>
-					<Button
-						onClick={() => setIndex(1)}
-						className={classes.projectBtn}
-						variant="contained"
-						color="primary">
-						My Projects
-					</Button>
-				</Fade>
-			</div>
-			<Fade left delay={1500}>
-				<IconButton onClick={handleDrawer}>
-					<Menu className={classes.menuIcon} />
-				</IconButton>
-			</Fade>
-			<SocialMedia />
+		<Box mb={25}>
+			{!mobile && (
+				<>
+					<div style={{ overflow: "hidden" }}>
+						<Fade left delay={500}>
+							<Button
+								onClick={() => setIndex(1)}
+								className={classes.projectBtn}
+								variant="contained"
+								color="primary">
+								My Projects
+							</Button>
+						</Fade>
+					</div>
+					<Fade left delay={1500}>
+						<IconButton onClick={handleDrawer}>
+							<Menu className={classes.menuIcon} />
+						</IconButton>
+					</Fade>
+				</>
+			)}
+			<SocialMedia mobile={mobile} handleDrawer={handleDrawer} />
+
 			<Drawer anchor="top" open={openDrawer} classes={{ paper: classes.paper }}>
 				<Box component="div" py={3}>
 					<IconButton onClick={handleDrawer}>
@@ -76,7 +83,8 @@ function NavBar({ setIndex }) {
 
 export default NavBar
 
-function SocialMedia() {
+function SocialMedia({ mobile, handleDrawer }) {
+	console.log(mobile)
 	const classes = useStyles()
 	const icons = [
 		{
@@ -109,6 +117,13 @@ function SocialMedia() {
 					</Fade>
 				</IconButton>
 			))}
+			{mobile && (
+				<IconButton onClick={handleDrawer}>
+					<Fade top delay={3000}>
+						<Menu className={classes.mobileMenuIcon} />
+					</Fade>
+				</IconButton>
+			)}
 		</div>
 	)
 }

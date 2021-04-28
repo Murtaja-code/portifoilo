@@ -36,6 +36,17 @@ const useStyles = makeStyles({
 			transform: "scale(1.2)"
 		}
 	},
+	mobileMenuIcon: {
+		color: "#8a8a8a",
+		background: "#232323",
+		fontSize: "28px",
+		padding: "5px",
+		borderRadius: "50%",
+		transition: "transform .2s",
+		"&:hover": {
+			transform: "scale(1.2)"
+		}
+	},
 	"@media (max-width: 700px)": {
 		socialIconsMobile: {
 			position: "absolute",

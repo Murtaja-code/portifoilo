@@ -22,7 +22,7 @@ function Container() {
 				}}
 				params={particlesConfig}
 			/>
-			<NavBar setIndex={setIndex} />
+			<NavBar setIndex={setIndex} index={index} />
 			<SwipeableViews index={index}>
 				<div style={Object.assign({})}>
 					<Intro />
