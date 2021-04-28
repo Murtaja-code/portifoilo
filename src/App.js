@@ -1,11 +1,15 @@
+import React, { useState } from "react"
 import Particles from "react-tsparticles"
 import particlesConfig from "./particle-config"
 import NavBar from "./components/NavBar/NavBar"
 import Intro from "./components/Intro/Intro"
+import Work from "./components/Work/Work"
+import SwipeableViews from "react-swipeable-views"
 
 import "./App.css"
 
 function App() {
+	const [index, setIndex] = useState(0)
 	return (
 		<div className="App">
 			<Particles
@@ -20,7 +24,15 @@ function App() {
 				params={particlesConfig}
 			/>
 			<NavBar />
-			<Intro />
+			<SwipeableViews index={index}>
+				<div style={Object.assign({})}>
+					<Intro />
+				</div>
+				<div style={Object.assign({})}>
+					<Work />
+					wertyu
+				</div>
+			</SwipeableViews>
 		</div>
 	)
 }
