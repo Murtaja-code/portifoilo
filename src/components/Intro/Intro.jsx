@@ -1,7 +1,8 @@
 import React from "react"
-import { Box, Typography, Grid } from "@material-ui/core"
+import { Box, Typography, Grid, Button } from "@material-ui/core"
 import useStyles from "./Style"
 import TextyAnim from "rc-texty"
+import CV from "../../assets/cv.pdf"
 
 function Intro() {
 	const classes = useStyles()
@@ -49,6 +50,13 @@ function Intro() {
 							an impact on what I work on. Well-versed in modern JavaScrip frameworks.
 						</TextyAnim>
 					</Typography>
+				</Grid>
+				<Grid item xs={12}>
+					<Button className={classes.CvBtn} variant="contained">
+						<a href={CV} className={classes.a} download>
+							Download my CV
+						</a>
+					</Button>
 				</Grid>
 			</Grid>
 		</Box>
