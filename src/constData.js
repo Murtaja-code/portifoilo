@@ -11,7 +11,8 @@ const CardData = [
 			"With its unique idea, Find Yours is a web app that helps people find their lost items.",
 		tools: ["CSS", "HTML", "JavaScrip", "React", "React-Bootstrap"],
 		link: "https://findyours.netlify.app/",
-		repo: "https://github.com/murtaja1/find_yours"
+		repo: "https://github.com/murtaja1/find_yours",
+		delay: 500
 	},
 	{
 		img: iraqiStudent,
@@ -20,7 +21,8 @@ const CardData = [
 			"A web app that contains the info about univeristies that every Iraqi student may need to know before applying.",
 		tools: ["CSS", "HTML", "JavaScrip", "vue", "Vue-Bootstrap", "python", "django"],
 		link: "https://iraqistudent.netlify.app/",
-		repo: "https://github.com/murtaja1/iraqi-student-frontend"
+		repo: "https://github.com/murtaja1/iraqi-student-frontend",
+		delay: 800
 	},
 	{
 		img: weather,
@@ -29,7 +31,8 @@ const CardData = [
 			"User-friendly web app that tells you the weather status only by typing your location.",
 		tools: ["CSS", "HTML", "JavaScrip", "React", "React-Bootstrap"],
 		link: "https://weatherapp-cpp-team.netlify.app/",
-		repo: "https://github.com/murtaja1/weather_app_js"
+		repo: "https://github.com/murtaja1/weather_app_js",
+		delay: 1000
 	},
 	{
 		img: collageScore,
@@ -38,7 +41,8 @@ const CardData = [
 			"A simple site developed to let student find the score of a collage or institute very easily by type the name only.",
 		tools: ["CSS", "HTML", "JavaScrip", "VUE", "Vue-Bootstrap"],
 		link: "https://murtaja1.github.io/collage_score/",
-		repo: "https://github.com/murtaja1/collage_score"
+		repo: "https://github.com/murtaja1/collage_score",
+		delay: 1200
 	}
 ]
 

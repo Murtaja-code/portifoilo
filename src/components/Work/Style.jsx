@@ -1,6 +1,13 @@
 import { makeStyles, createMuiTheme } from "@material-ui/core/styles"
 
 const useStyles = makeStyles({
+	topText: {
+		color: "#cacaca",
+		marginBottom: "2rem"
+	},
+	card: {
+		background: "#eeeeee"
+	},
 	link: {
 		textDecoration: "none"
 	},

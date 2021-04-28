@@ -46,7 +46,7 @@ function NavBar() {
 			</div>
 			{!mobile && (
 				<>
-					<Fade left delay={1500}>
+					<Fade right delay={1500}>
 						<IconButton onClick={handleDrawer}>
 							<Menu className={classes.menuIcon} />
 						</IconButton>
