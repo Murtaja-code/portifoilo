@@ -50,7 +50,7 @@ const useStyles = makeStyles({
 	},
 	"@media (max-width: 700px)": {
 		socialIconsMobile: {
-			position: "absolute",
+			position: "fixed",
 			bottom: 0,
 			width: "100%"
 		}

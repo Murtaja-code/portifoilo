@@ -13,6 +13,7 @@ import {
 import { Menu, Close, Facebook, GitHub, LinkedIn, Twitter } from "@material-ui/icons"
 import useStyles from "./Style"
 import Fade from "react-reveal/Fade"
+import { Link } from "react-router-dom"
 
 const tabs = [
 	{ tab: "Home", delay: 100, index: 0 },
@@ -20,7 +21,7 @@ const tabs = [
 	{ tab: "About", delay: 300, index: 2 },
 	{ tab: "Contact", delay: 400, index: 3 }
 ]
-function NavBar({ setIndex, index }) {
+function NavBar() {
 	const classes = useStyles()
 	const [openDrawer, setOpenDrawer] = useState(false)
 	const mobile = useMediaQuery("(max-width: 700px)")
@@ -29,20 +30,17 @@ function NavBar({ setIndex, index }) {
 	}
 	const handleTabClick = (index) => {
 		setOpenDrawer(!openDrawer)
-		setIndex(index)
 	}
 	return (
 		<Box>
 			<div style={{ overflow: "hidden" }}>
 				<Fade left delay={500}>
 					<div style={{ position: "relative", zIndex: 99 }}>
-						<Button
-							onClick={() => setIndex(1)}
-							className={classes.projectBtn}
-							variant="contained"
-							color="primary">
-							My Projects
-						</Button>
+						<Link to="/work">
+							<Button className={classes.projectBtn} variant="contained" color="primary">
+								My Projects
+							</Button>
+						</Link>
 					</div>
 				</Fade>
 			</div>
