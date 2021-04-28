@@ -22,14 +22,13 @@ function Container() {
 				}}
 				params={particlesConfig}
 			/>
-			<NavBar />
+			<NavBar setIndex={setIndex} />
 			<SwipeableViews index={index}>
 				<div style={Object.assign({})}>
 					<Intro />
 				</div>
 				<div style={Object.assign({})}>
 					<Work />
-					wertyu
 				</div>
 			</SwipeableViews>
 		</div>

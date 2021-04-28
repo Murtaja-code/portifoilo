@@ -14,22 +14,30 @@ import useStyles from "./Style"
 import Fade from "react-reveal/Fade"
 
 const tabs = [
-	{ tab: "Home", delay: 100 },
-	{ tab: "Experience", delay: 200 },
-	{ tab: "About", delay: 300 },
-	{ tab: "Contact", delay: 400 }
+	{ tab: "Home", delay: 100, index: 0 },
+	{ tab: "Experience", delay: 200, index: 1 },
+	{ tab: "About", delay: 300, index: 2 },
+	{ tab: "Contact", delay: 400, index: 3 }
 ]
-function NavBar() {
+function NavBar({ setIndex }) {
 	const classes = useStyles()
 	const [openDrawer, setOpenDrawer] = useState(false)
 	const handleDrawer = () => {
 		setOpenDrawer(!openDrawer)
 	}
+	const handleTabClick = (index) => {
+		setOpenDrawer(!openDrawer)
+		setIndex(index)
+	}
 	return (
 		<Box mb={30}>
 			<div style={{ overflow: "hidden" }}>
 				<Fade left delay={500}>
-					<Button className={classes.projectBtn} variant="contained" color="primary">
+					<Button
+						onClick={() => setIndex(1)}
+						className={classes.projectBtn}
+						variant="contained"
+						color="primary">
 						My Projects
 					</Button>
 				</Fade>
@@ -48,7 +56,11 @@ function NavBar() {
 				</Box>
 				<List lign="center">
 					{tabs.map((tab, i) => (
-						<ListItem button className={classes.tabs} key={i}>
+						<ListItem
+							onClick={() => handleTabClick(tab.index)}
+							button
+							className={classes.tabs}
+							key={i}>
 							<ListItemText>
 								<Fade left delay={tab.delay}>
 									<Typography variant="h3">{tab.tab}</Typography>
