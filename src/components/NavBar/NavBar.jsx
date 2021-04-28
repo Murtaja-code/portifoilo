@@ -7,8 +7,7 @@ import {
 	List,
 	Drawer,
 	Box,
-	Typography,
-	useMediaQuery
+	Typography
 } from "@material-ui/core"
 import { Menu, Close, Facebook, GitHub, LinkedIn, Twitter } from "@material-ui/icons"
 import useStyles from "./Style"
@@ -21,7 +20,7 @@ function NavBar() {
 		setOpenDrawer(!openDrawer)
 	}
 	return (
-		<div>
+		<Box mb={30}>
 			<Button className={classes.projectBtn} variant="contained" color="primary">
 				My Projects
 			</Button>
@@ -45,7 +44,7 @@ function NavBar() {
 					))}
 				</List>
 			</Drawer>
-		</div>
+		</Box>
 	)
 }
 
@@ -53,7 +52,6 @@ export default NavBar
 
 function SocialMedia() {
 	const classes = useStyles()
-	const mobile = useMediaQuery("(max-width: 700px)")
 	const icons = [
 		{
 			icon: <GitHub style={{ color: "#4078c0" }} className={classes.socialIcons} />,
@@ -73,14 +71,12 @@ function SocialMedia() {
 		}
 	]
 	return (
-		<>
-			<div className={`${mobile && classes.socialIconsMobile}`}>
-				{icons.map((icon, i) => (
-					<IconButton key={i}>
-						<a href={icon.url}>{icon.icon}</a>
-					</IconButton>
-				))}
-			</div>
-		</>
+		<div className={classes.socialIconsMobile}>
+			{icons.map((icon, i) => (
+				<IconButton key={i}>
+					<a href={icon.url}>{icon.icon}</a>
+				</IconButton>
+			))}
+		</div>
 	)
 }

@@ -7,7 +7,7 @@ function Intro() {
 	const classes = useStyles()
 
 	return (
-		<Box mt={30}>
+		<Box>
 			<Grid container direction="row" justify="center" alignItems="center">
 				<Grid item xs={12} style={{ width: "100vh" }}>
 					<TextyAnim
@@ -29,7 +29,7 @@ function Intro() {
 					</TextyAnim>
 				</Grid>
 
-				<Grid item xs={11} sm={8}>
+				<Grid item xs={11} sm={8} md={7} lg={6}>
 					<Typography variant="h6" style={{ color: "#8a8a8a" }}>
 						<TextyAnim
 							type="mask-top"
