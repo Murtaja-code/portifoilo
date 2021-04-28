@@ -13,7 +13,12 @@ import { Menu, Close, Facebook, GitHub, LinkedIn, Twitter } from "@material-ui/i
 import useStyles from "./Style"
 import Fade from "react-reveal/Fade"
 
-const tabs = ["Home", "Experience", "About", "Contact"]
+const tabs = [
+	{ tab: "Home", delay: 100 },
+	{ tab: "Experience", delay: 200 },
+	{ tab: "About", delay: 300 },
+	{ tab: "Contact", delay: 400 }
+]
 function NavBar() {
 	const classes = useStyles()
 	const [openDrawer, setOpenDrawer] = useState(false)
@@ -45,7 +50,9 @@ function NavBar() {
 					{tabs.map((tab, i) => (
 						<ListItem button className={classes.tabs} key={i}>
 							<ListItemText>
-								<Typography variant="h3">{tab}</Typography>
+								<Fade left delay={tab.delay}>
+									<Typography variant="h3">{tab.tab}</Typography>
+								</Fade>
 							</ListItemText>
 						</ListItem>
 					))}
