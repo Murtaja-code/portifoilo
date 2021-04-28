@@ -52,11 +52,13 @@ function Intro() {
 					</Typography>
 				</Grid>
 				<Grid item xs={12}>
-					<Button className={classes.CvBtn} variant="contained">
-						<a href={CV} className={classes.a} download>
-							Download my CV
-						</a>
-					</Button>
+					<Box pt={1.5}>
+						<Button className={classes.CvBtn} variant="contained">
+							<a href={CV} className={classes.a} download>
+								Download my CV
+							</a>
+						</Button>
+					</Box>
 				</Grid>
 			</Grid>
 		</Box>
