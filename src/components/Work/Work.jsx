@@ -1,42 +1,54 @@
 import React from "react"
 import Carousel from "react-material-ui-carousel"
-import { Paper, Button, Grid } from "@material-ui/core"
-
+import {
+	Button,
+	Grid,
+	Card,
+	CardActionArea,
+	CardContent,
+	CardActions,
+	Typography,
+	Box,
+	Container
+} from "@material-ui/core"
+import projects from "../../constData"
+import useStyles from "./Style"
 function Work() {
-	var items = [
-		{
-			name: "Random Name #1",
-			description: "Probably the most random thing you have ever seen!"
-		},
-		{
-			name: "Random Name #2",
-			description: "Hello World!"
-		}
-	]
-
+	const classes = useStyles()
 	return (
-		<Carousel>
-			{items.map((item, i) => (
-				<Grid container justify="center" key={i}>
-					<Grid item xs={12} md={6}>
-						<Paper>
-							<h2>{item.name}</h2>
-							<p>{item.description}</p>
-
-							<Button className="CheckButton">Check it out!</Button>
-						</Paper>
-					</Grid>
-					<Grid item xs={12} md={6}>
-						<Paper>
-							<h2>{item.name}</h2>
-							<p>{item.description}</p>
-
-							<Button className="CheckButton">Check it out!</Button>
-						</Paper>
-					</Grid>
-				</Grid>
-			))}
-		</Carousel>
+		<Container>
+			<Box mt={18}>
+				<Carousel>
+					{projects.map((project, i) => (
+						<Grid container justify="center" alignItems="center" key={i}>
+							<Grid item xs={12} md={6}>
+								<Card>
+									<CardActionArea>
+										<img src={project.img} height="200" alt="ll" />
+										<CardContent>
+											<Typography gutterBottom variant="h5" component="h2">
+												{project.title}
+											</Typography>
+											<Typography variant="body2" color="textSecondary" component="p">
+												{project.descrption}
+											</Typography>
+										</CardContent>
+									</CardActionArea>
+									<CardActions>
+										<Button size="small" color="primary">
+											<a herf={project.link}>Live</a>
+										</Button>
+										<Button size="small" color="primary">
+											<a herf={project.repo}>Repo</a>
+										</Button>
+									</CardActions>
+								</Card>
+							</Grid>
+						</Grid>
+					))}
+				</Carousel>
+			</Box>
+		</Container>
 	)
 }
 

@@ -3,12 +3,11 @@ import { Box, Typography, Grid, Button } from "@material-ui/core"
 import useStyles from "./Style"
 import TextyAnim from "rc-texty"
 import CV from "../../assets/cv.pdf"
-
 function Intro() {
 	const classes = useStyles()
 
 	return (
-		<Box>
+		<Box mt={27}>
 			<Grid container direction="row" justify="center" alignItems="center">
 				<Grid item xs={12} style={{ width: "100vh" }}>
 					<TextyAnim

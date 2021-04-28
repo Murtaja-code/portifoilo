@@ -19,6 +19,7 @@ const useStyles = makeStyles({
 	},
 	projectBtn: {
 		position: "fixed",
+		zIndex: "99 !important",
 		top: "85px",
 		right: "-160px",
 		transform: "rotate(50deg)",

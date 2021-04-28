@@ -32,20 +32,22 @@ function NavBar({ setIndex, index }) {
 		setIndex(index)
 	}
 	return (
-		<Box mb={25}>
+		<Box>
+			<div style={{ overflow: "hidden" }}>
+				<Fade left delay={500}>
+					<div style={{ position: "relative", zIndex: 99 }}>
+						<Button
+							onClick={() => setIndex(1)}
+							className={classes.projectBtn}
+							variant="contained"
+							color="primary">
+							My Projects
+						</Button>
+					</div>
+				</Fade>
+			</div>
 			{!mobile && (
 				<>
-					<div style={{ overflow: "hidden" }}>
-						<Fade left delay={500}>
-							<Button
-								onClick={() => setIndex(1)}
-								className={classes.projectBtn}
-								variant="contained"
-								color="primary">
-								My Projects
-							</Button>
-						</Fade>
-					</div>
 					<Fade left delay={1500}>
 						<IconButton onClick={handleDrawer}>
 							<Menu className={classes.menuIcon} />
@@ -84,7 +86,6 @@ function NavBar({ setIndex, index }) {
 export default NavBar
 
 function SocialMedia({ mobile, handleDrawer }) {
-	console.log(mobile)
 	const classes = useStyles()
 	const icons = [
 		{
