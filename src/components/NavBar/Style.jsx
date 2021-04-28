@@ -17,6 +17,9 @@ const useStyles = makeStyles({
 		textAlign: "center",
 		color: "#8a8a8a"
 	},
+	link: {
+		textDecoration: "none"
+	},
 	projectBtn: {
 		position: "fixed",
 		zIndex: "99 !important",

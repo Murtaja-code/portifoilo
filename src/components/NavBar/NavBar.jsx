@@ -16,10 +16,10 @@ import Fade from "react-reveal/Fade"
 import { Link } from "react-router-dom"
 
 const tabs = [
-	{ tab: "Home", delay: 100, index: 0 },
-	{ tab: "Experience", delay: 200, index: 1 },
-	{ tab: "About", delay: 300, index: 2 },
-	{ tab: "Contact", delay: 400, index: 3 }
+	{ tab: "Home", delay: 100, index: 0, link: "/" },
+	{ tab: "Experience", delay: 200, index: 1, link: "/work" },
+	{ tab: "About", delay: 300, index: 2, link: "/about" },
+	{ tab: "Contact", delay: 400, index: 3, link: "/contact" }
 ]
 function NavBar() {
 	const classes = useStyles()
@@ -63,17 +63,15 @@ function NavBar() {
 				</Box>
 				<List lign="center">
 					{tabs.map((tab, i) => (
-						<ListItem
-							onClick={() => handleTabClick(tab.index)}
-							button
-							className={classes.tabs}
-							key={i}>
-							<ListItemText>
-								<Fade left delay={tab.delay}>
-									<Typography variant="h3">{tab.tab}</Typography>
-								</Fade>
-							</ListItemText>
-						</ListItem>
+						<Link to={tab.link} key={i} className={classes.link}>
+							<ListItem onClick={() => handleTabClick(tab.index)} button className={classes.tabs}>
+								<ListItemText>
+									<Fade left delay={tab.delay}>
+										<Typography variant="h3">{tab.tab}</Typography>
+									</Fade>
+								</ListItemText>
+							</ListItem>
+						</Link>
 					))}
 				</List>
 			</Drawer>
