@@ -18,6 +18,7 @@ import useStyles, { theme } from "./Style"
 import Bounce from "react-reveal/Bounce"
 import Fade from "react-reveal/Fade"
 import Carousel from "react-material-ui-carousel"
+
 function Work() {
 	const classes = useStyles()
 	const mobile = useMediaQuery("(max-width: 700px)")
@@ -83,9 +84,16 @@ function Work() {
 							))}
 						</Grid>
 					) : (
-						<Carousel>
+						<Carousel
+							navButtonsAlwaysVisible
+							navButtonsProps={{
+								style: {
+									backgroundColor: "cornflowerblue",
+									padding: "4px"
+								}
+							}}>
 							{projects.map((project, i) => (
-								<span key={i}>{cards(project, false)}</span>
+								<div key={i}>{cards(project, false)}</div>
 							))}
 						</Carousel>
 					)}
