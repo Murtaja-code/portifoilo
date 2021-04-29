@@ -16,10 +16,10 @@ import Fade from "react-reveal/Fade"
 import { Link } from "react-router-dom"
 
 const tabs = [
-	{ tab: "Home", delay: 100, index: 0, link: "/" },
-	{ tab: "Experience", delay: 200, index: 1, link: "/work" },
-	{ tab: "About", delay: 300, index: 2, link: "/about" },
-	{ tab: "Contact", delay: 400, index: 3, link: "/contact" }
+	{ tab: "Home", delay: 100, link: "/" },
+	{ tab: "Experience", delay: 200, link: "/work" },
+	{ tab: "About", delay: 300, link: "/about" },
+	{ tab: "Contact", delay: 400, link: "/contact" }
 ]
 function NavBar() {
 	const classes = useStyles()
