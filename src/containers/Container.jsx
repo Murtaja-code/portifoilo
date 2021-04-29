@@ -5,7 +5,7 @@ import NavBar from "../components/NavBar/NavBar"
 import Intro from "../components/Intro/Intro"
 import Work from "../components/Work/Work"
 import About from "../components/About/About"
-
+import Contact from "./Contact"
 import { BrowserRouter, Switch, Route } from "react-router-dom"
 
 function Container() {
@@ -30,6 +30,7 @@ function Container() {
 					<Route exact path="/" component={Intro} />
 					<Route path="/work" component={Work} />
 					<Route path="/about" component={About} />
+					<Route path="/contact" component={Contact} />
 				</Switch>
 			</BrowserRouter>
 		</div>
