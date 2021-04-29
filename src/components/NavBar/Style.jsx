@@ -1,6 +1,9 @@
 import { makeStyles } from "@material-ui/core/styles"
 
 const useStyles = makeStyles({
+	active: {
+		color: "#afafaf"
+	},
 	socialIcons: {
 		fontSize: "40px",
 		transition: "transform .2s",

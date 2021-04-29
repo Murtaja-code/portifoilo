@@ -28,7 +28,7 @@ function NavBar() {
 	const handleDrawer = () => {
 		setOpenDrawer(!openDrawer)
 	}
-	const handleTabClick = (index) => {
+	const handleTabClick = () => {
 		setOpenDrawer(!openDrawer)
 	}
 	return (
@@ -56,7 +56,7 @@ function NavBar() {
 			<SocialMedia mobile={mobile} handleDrawer={handleDrawer} />
 
 			<Drawer anchor="top" open={openDrawer} classes={{ paper: classes.paper }}>
-				<Box component="div" py={3}>
+				<Box component="div" py={3} style={{ overflow: "hidden" }}>
 					<IconButton onClick={handleDrawer}>
 						<Close className={classes.menuIcon} />
 					</IconButton>
@@ -67,7 +67,11 @@ function NavBar() {
 							<ListItem onClick={() => handleTabClick(tab.index)} button className={classes.tabs}>
 								<ListItemText>
 									<Fade left delay={tab.delay}>
-										<Typography variant="h3">{tab.tab}</Typography>
+										<Typography
+											variant="h3"
+											className={window.location.pathname === tab.link ? classes.active : ""}>
+											{tab.tab}
+										</Typography>
 									</Fade>
 								</ListItemText>
 							</ListItem>
