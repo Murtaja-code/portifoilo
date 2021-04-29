@@ -104,7 +104,7 @@ function ContactForm({ handleChange, handleSubmit, values }) {
 										onChange={(e) => handleChange(e)}
 										variant="outlined"
 										multiline
-										rowsMax={4}
+										rowsMax={2}
 										required
 										fullWidth
 										placeholder="message"
