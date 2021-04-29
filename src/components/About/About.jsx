@@ -24,10 +24,10 @@ import Zoom from "react-reveal/Zoom"
 
 const languages = [
 	{ icon: faPython, name: "PYTHON", color: "306998", delay: 400 },
-	{ icon: faHtml5, name: "HTML5", color: "#e34f26", delay: 600 },
-	{ icon: faCss3, name: "CSS3", color: "#264de4", delay: 800 },
-	{ icon: faJs, name: "JAVASCRIPT", color: "#f0db4f", delay: 900 },
-	{ icon: typescript, name: "TYPESCRITP", color: "", delay: 1100 }
+	{ icon: faJs, name: "JAVASCRIPT", color: "#f0db4f", delay: 600 },
+	{ icon: typescript, name: "TYPESCRITP", color: "", delay: 800 },
+	{ icon: faHtml5, name: "HTML5", color: "#e34f26", delay: 1000 },
+	{ icon: faCss3, name: "CSS3", color: "#264de4", delay: 1200 }
 ]
 
 const frameworks = [
@@ -61,7 +61,7 @@ function About() {
 				{topText("Languages I speak", 300)}
 				<Grid container justify="center" spacing={2}>
 					{languages.map((icon, i) => (
-						<Grid key={i} item xs={6} sm={4} md={3}>
+						<Grid key={i} item xs={6} sm={4} md={3} className={classes.scale}>
 							<Zoom delay={icon.delay}>
 								<Typography variant="h6" style={{ color: "#8a8a8a" }}>
 									{icon.name}
@@ -86,7 +86,7 @@ function About() {
 				<Box mt={4}>{topText("Tools I use", 1200)}</Box>
 				<Grid container justify="center" spacing={2}>
 					{frameworks.map((icon, i) => (
-						<Grid key={i} item xs={6} sm={4} md={3}>
+						<Grid key={i} item xs={6} sm={4} md={3} className={classes.scale}>
 							<Zoom delay={icon.delay}>
 								<Typography variant="h6" style={{ color: "#8a8a8a" }}>
 									{icon.name}
