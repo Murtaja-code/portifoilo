@@ -4,6 +4,8 @@ import particlesConfig from "../particle-config"
 import NavBar from "../components/NavBar/NavBar"
 import Intro from "../components/Intro/Intro"
 import Work from "../components/Work/Work"
+import About from "../components/About/About"
+
 import { BrowserRouter, Switch, Route } from "react-router-dom"
 
 function Container() {
@@ -26,7 +28,8 @@ function Container() {
 				<NavBar setIndex={setIndex} index={index} />
 				<Switch>
 					<Route exact path="/" component={Intro} />
-					<Route exact path="/work" component={Work} />
+					<Route path="/work" component={Work} />
+					<Route path="/about" component={About} />
 				</Switch>
 			</BrowserRouter>
 		</div>
