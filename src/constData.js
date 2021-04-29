@@ -8,7 +8,7 @@ const CardData = [
 		img: find_yours,
 		title: "Find Yours",
 		descrption:
-			"With its unique idea, Find Yours is a web app that helps people find their lost items.",
+			"With its unique idea, Find Yours is a web app that helps people find their lost items and allow others to share the items they find.",
 		tools: ["CSS", "HTML", "JavaScrip", "React", "React-Bootstrap"],
 		link: "https://findyours.netlify.app/",
 		repo: "https://github.com/murtaja1/find_yours",
@@ -28,7 +28,7 @@ const CardData = [
 		img: weather,
 		title: "Weather",
 		descrption:
-			"User-friendly web app that tells you the weather status only by typing your location.",
+			"A user-friendly web app that tells you the weather status for today and forcasts for the next five days only by typing your location.",
 		tools: ["CSS", "HTML", "JavaScrip", "React", "React-Bootstrap"],
 		link: "https://weatherapp-cpp-team.netlify.app/",
 		repo: "https://github.com/murtaja1/weather_app_js",
@@ -38,7 +38,7 @@ const CardData = [
 		img: collageScore,
 		title: "The Score",
 		descrption:
-			"A simple site developed to let student find the score of a collage or institute very easily by type the name only.",
+			"A clean web app developed to let student find the score of a collage, department or institute very easily by type the name only in Iraq.",
 		tools: ["CSS", "HTML", "JavaScrip", "VUE", "Vue-Bootstrap"],
 		link: "https://murtaja1.github.io/collage_score/",
 		repo: "https://github.com/murtaja1/collage_score",
