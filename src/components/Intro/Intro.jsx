@@ -3,13 +3,15 @@ import { Box, Typography, Grid, Button } from "@material-ui/core"
 import useStyles from "./Style"
 import TextyAnim from "rc-texty"
 import CV from "../../assets/cv.pdf"
+import Zoom from "react-reveal/Zoom"
+
 function Intro() {
 	const classes = useStyles()
 
 	return (
 		<Box mt={27}>
 			<Grid container direction="row" justify="center" alignItems="center">
-				<Grid item xs={12} style={{ width: "100vh" }}>
+				<Grid item xs={12}>
 					<TextyAnim
 						className={classes.name}
 						type="mask-top"
@@ -30,7 +32,7 @@ function Intro() {
 				</Grid>
 
 				<Grid item xs={11} sm={8} md={7} lg={6}>
-					<Typography variant="h6" style={{ color: "#8a8a8a" }}>
+					<Typography variant="h6" className={classes.mainColor}>
 						<TextyAnim
 							type="mask-top"
 							duration={(e) => {
@@ -51,13 +53,15 @@ function Intro() {
 					</Typography>
 				</Grid>
 				<Grid item xs={12}>
-					<Box pt={1.5}>
-						<Button className={classes.CvBtn} variant="contained">
-							<a href={CV} className={classes.a} download>
-								Download my CV
-							</a>
-						</Button>
-					</Box>
+					<Zoom delay={7000}>
+						<Box pt={1.5}>
+							<Button className={classes.CvBtn} variant="contained">
+								<a href={CV} className={classes.a} download>
+									Download my CV
+								</a>
+							</Button>
+						</Box>
+					</Zoom>
 				</Grid>
 			</Grid>
 		</Box>

@@ -7,6 +7,9 @@ const useStyles = makeStyles({
 			transform: "scale(1.3)"
 		}
 	},
+	mainColor: {
+		color: "#8a8a8a"
+	},
 	topText: {
 		color: "#cacaca",
 		marginBottom: "2rem"

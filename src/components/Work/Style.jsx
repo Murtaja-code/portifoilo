@@ -1,6 +1,9 @@
 import { makeStyles, createMuiTheme } from "@material-ui/core/styles"
 
 const useStyles = makeStyles({
+	overflow: {
+		overflow: "hidden"
+	},
 	topText: {
 		color: "#cacaca",
 		marginBottom: "2rem"
