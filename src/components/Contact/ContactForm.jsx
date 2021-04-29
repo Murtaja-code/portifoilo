@@ -94,7 +94,7 @@ function ContactForm({ handleChange, handleSubmit, values }) {
 										id="email"
 										name="email"
 										autoComplete="email"
-									/>{" "}
+									/>
 								</Fade>
 							</Grid>
 							<Grid item xs={12}>
