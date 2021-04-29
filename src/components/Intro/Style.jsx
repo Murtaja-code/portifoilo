@@ -1,36 +1,20 @@
 import { makeStyles } from "@material-ui/core/styles"
 
 const useStyles = makeStyles({
+	grid: {
+		width: "100vw"
+	},
+	mainColor: {
+		color: "#8a8a8a !important"
+	},
 	CvBtn: {
 		textTransform: "inherit !important",
 		background: "red",
 		"&:hover": {
 			backgroundColor: "#d05252"
 		},
-		color: "white",
-		animation: "$myEffect ",
-		animationDuration: "18s"
-	},
-	"@keyframes myEffect": {
-		"0%": {
-			opacity: "0%",
-			display: "none"
-		},
-		"30%": {
-			opacity: "0%",
-			display: "none"
-		},
-		"40%": {
-			opacity: "0%",
-			display: "none"
-		},
-		"50%": {
-			opacity: "50%",
-			display: "block"
-		},
-		"100%": {
-			opacity: "100%",
-			display: "block"
+		mainColor: {
+			color: "#8a8a8a "
 		}
 	},
 	a: {
