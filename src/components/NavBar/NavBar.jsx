@@ -14,13 +14,8 @@ import { Menu, Close, Facebook, GitHub, LinkedIn, Twitter } from "@material-ui/i
 import useStyles from "./Style"
 import Fade from "react-reveal/Fade"
 import { Link, useLocation } from "react-router-dom"
+import { tabs } from "./Data"
 
-const tabs = [
-	{ tab: "Home", delay: 100, link: "/" },
-	{ tab: "Experience", delay: 200, link: "/work" },
-	{ tab: "About", delay: 300, link: "/about" },
-	{ tab: "Contact", delay: 400, link: "/contact" }
-]
 function NavBar() {
 	const classes = useStyles()
 	const [openDrawer, setOpenDrawer] = useState(false)
@@ -35,7 +30,7 @@ function NavBar() {
 	}
 	return (
 		<Box className={classes.onTop}>
-			<div style={{ overflow: "hidden" }}>
+			<div className={classes.overflow}>
 				<Fade left delay={500}>
 					<div>
 						<Link to="/work">
@@ -58,7 +53,7 @@ function NavBar() {
 			<SocialMedia mobile={mobile} handleDrawer={handleDrawer} />
 
 			<Drawer anchor="top" open={openDrawer} classes={{ paper: classes.paper }}>
-				<Box component="div" py={3} style={{ overflow: "hidden" }}>
+				<Box component="div" py={3} className={classes.overflow}>
 					<IconButton onClick={handleDrawer}>
 						<Close className={classes.menuIcon} />
 					</IconButton>
