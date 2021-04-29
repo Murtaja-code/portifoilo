@@ -20,25 +20,27 @@ import {
 	faVuejs,
 	faBootstrap
 } from "@fortawesome/free-brands-svg-icons"
+import Zoom from "react-reveal/Zoom"
+
 const languages = [
-	{ icon: faPython, name: "PYTHON", color: "306998", delay: 100 },
-	{ icon: faHtml5, name: "HTML5", color: "#e34f26", delay: 200 },
-	{ icon: faCss3, name: "CSS3", color: "#264de4", delay: 300 },
-	{ icon: faJs, name: "JAVASCRIPT", color: "#f0db4f", delay: 400 },
-	{ icon: typescript, name: "TYPESCRITP", color: "", delay: 300 }
+	{ icon: faPython, name: "PYTHON", color: "306998", delay: 400 },
+	{ icon: faHtml5, name: "HTML5", color: "#e34f26", delay: 600 },
+	{ icon: faCss3, name: "CSS3", color: "#264de4", delay: 800 },
+	{ icon: faJs, name: "JAVASCRIPT", color: "#f0db4f", delay: 900 },
+	{ icon: typescript, name: "TYPESCRITP", color: "", delay: 1100 }
 ]
 
 const frameworks = [
-	{ icon: faReact, name: "REACT", color: "#00d8ff", delay: 100 },
-	{ icon: redux, name: "REDUX", color: "#00d8ff", delay: 100 },
-	{ icon: reactb, name: "React-bootstrap", color: "#f0db4f", delay: 400 },
-	{ icon: material, name: "MATERIAL UI", color: "#f0db4f", delay: 400 },
-	{ icon: faVuejs, name: "VUE", color: "#42b883", delay: 200 },
-	{ icon: vuebootstrap, name: "Vue-bootstrap", color: "", delay: 300 },
-	{ icon: faBootstrap, name: "BOOTSTRAP", color: "#7952b3", delay: 300 },
-	{ icon: django, name: "DJNAGO", color: "#f0db4f", delay: 400 },
-	{ icon: flask, name: "FLASK", color: "#f0db4f", delay: 400 },
-	{ icon: git, name: "GIT", color: "#f0db4f", delay: 400 }
+	{ icon: faReact, name: "REACT", color: "#00d8ff", delay: 1400 },
+	{ icon: redux, name: "REDUX", color: "#00d8ff", delay: 1600 },
+	{ icon: reactb, name: "React-bootstrap", color: "#f0db4f", delay: 1800 },
+	{ icon: material, name: "MATERIAL UI", color: "#f0db4f", delay: 2000 },
+	{ icon: faVuejs, name: "VUE", color: "#42b883", delay: 2200 },
+	{ icon: vuebootstrap, name: "Vue-bootstrap", color: "", delay: 2400 },
+	{ icon: faBootstrap, name: "BOOTSTRAP", color: "#7952b3", delay: 2600 },
+	{ icon: django, name: "DJNAGO", color: "#f0db4f", delay: 2800 },
+	{ icon: flask, name: "FLASK", color: "#f0db4f", delay: 3000 },
+	{ icon: git, name: "GIT", color: "#f0db4f", delay: 3200 }
 ]
 
 function About() {
@@ -56,52 +58,58 @@ function About() {
 		<Container>
 			<Box pt={20}>
 				{/* languages*/}
-				{topText("Languages I speak", 500)}
+				{topText("Languages I speak", 300)}
 				<Grid container justify="center" spacing={2}>
 					{languages.map((icon, i) => (
 						<Grid key={i} item xs={6} sm={4} md={3}>
-							<Typography variant="h6" style={{ color: "#8a8a8a" }}>
-								{icon.name}
-							</Typography>
-							{icon.name !== "TYPESCRITP" ? (
-								<FontAwesomeIcon icon={icon.icon} size="6x" style={{ color: icon.color }} />
-							) : (
-								<object
-									data={typescript}
-									type="image/svg+xml"
-									width="95px"
-									height="95px"
-									alt="dd"
-								/>
-							)}
+							<Zoom delay={icon.delay}>
+								<Typography variant="h6" style={{ color: "#8a8a8a" }}>
+									{icon.name}
+								</Typography>
+								{icon.name !== "TYPESCRITP" ? (
+									<FontAwesomeIcon icon={icon.icon} size="6x" style={{ color: icon.color }} />
+								) : (
+									<object
+										data={typescript}
+										type="image/svg+xml"
+										width="95px"
+										height="95px"
+										alt="dd">
+										dddd
+									</object>
+								)}
+							</Zoom>
 						</Grid>
 					))}
 				</Grid>
 				{/* frameworks */}
-				<Box mt={4}>{topText("Tools I use", 500)}</Box>
+				<Box mt={4}>{topText("Tools I use", 1200)}</Box>
 				<Grid container justify="center" spacing={2}>
 					{frameworks.map((icon, i) => (
 						<Grid key={i} item xs={6} sm={4} md={3}>
-							<Typography variant="h6" style={{ color: "#8a8a8a" }}>
-								{icon.name}
-							</Typography>
-							{(icon.name === "VUE") | (icon.name === "REACT") | (icon.name === "BOOTSTRAP") ? (
-								<FontAwesomeIcon icon={icon.icon} size="6x" style={{ color: icon.color }} />
-							) : (
-								<span>
-									{icon.name !== "REACT-BOOTSRAP" ? (
-										<object
-											data={icon.icon}
-											type="image/svg+xml"
-											width="95px"
-											height="95px"
-											alt="dd"
-										/>
-									) : (
-										<img src={icon.icon} alt="d" width="95px" height="95px" />
-									)}
-								</span>
-							)}
+							<Zoom delay={icon.delay}>
+								<Typography variant="h6" style={{ color: "#8a8a8a" }}>
+									{icon.name}
+								</Typography>
+								{(icon.name === "VUE") | (icon.name === "REACT") | (icon.name === "BOOTSTRAP") ? (
+									<FontAwesomeIcon icon={icon.icon} size="6x" style={{ color: icon.color }} />
+								) : (
+									<span>
+										{icon.name !== "REACT-BOOTSRAP" ? (
+											<object
+												data={icon.icon}
+												type="image/svg+xml"
+												width="95px"
+												height="95px"
+												alt="dd">
+												dddd
+											</object>
+										) : (
+											<img src={icon.icon} alt="d" width="95px" height="95px" />
+										)}
+									</span>
+								)}
+							</Zoom>
 						</Grid>
 					))}
 				</Grid>
