@@ -24,7 +24,7 @@ export const theme = createMuiTheme({
 				borderRadius: "5px"
 			},
 			multiline: {
-				minHeight: "100px",
+				minHeight: "90px",
 				background: "#2f2f2f"
 			}
 		}
