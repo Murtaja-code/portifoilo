@@ -63,21 +63,23 @@ function About() {
 					{languages.map((icon, i) => (
 						<Grid key={i} item xs={6} sm={4} md={3} className={classes.scale}>
 							<Zoom delay={icon.delay}>
-								<Typography variant="h6" style={{ color: "#8a8a8a" }}>
-									{icon.name}
-								</Typography>
-								{icon.name !== "TYPESCRITP" ? (
-									<FontAwesomeIcon icon={icon.icon} size="6x" style={{ color: icon.color }} />
-								) : (
-									<object
-										data={typescript}
-										type="image/svg+xml"
-										width="95px"
-										height="95px"
-										alt="dd">
-										dddd
-									</object>
-								)}
+								<div>
+									<Typography variant="h6" style={{ color: "#8a8a8a" }}>
+										{icon.name}
+									</Typography>
+									{icon.name !== "TYPESCRITP" ? (
+										<FontAwesomeIcon icon={icon.icon} size="6x" style={{ color: icon.color }} />
+									) : (
+										<object
+											data={typescript}
+											type="image/svg+xml"
+											width="95px"
+											height="95px"
+											alt="dd">
+											dddd
+										</object>
+									)}
+								</div>
 							</Zoom>
 						</Grid>
 					))}
@@ -88,27 +90,29 @@ function About() {
 					{frameworks.map((icon, i) => (
 						<Grid key={i} item xs={6} sm={4} md={3} className={classes.scale}>
 							<Zoom delay={icon.delay}>
-								<Typography variant="h6" style={{ color: "#8a8a8a" }}>
-									{icon.name}
-								</Typography>
-								{(icon.name === "VUE") | (icon.name === "REACT") | (icon.name === "BOOTSTRAP") ? (
-									<FontAwesomeIcon icon={icon.icon} size="6x" style={{ color: icon.color }} />
-								) : (
-									<span>
-										{icon.name !== "REACT-BOOTSRAP" ? (
-											<object
-												data={icon.icon}
-												type="image/svg+xml"
-												width="95px"
-												height="95px"
-												alt="dd">
-												dddd
-											</object>
-										) : (
-											<img src={icon.icon} alt="d" width="95px" height="95px" />
-										)}
-									</span>
-								)}
+								<div>
+									<Typography variant="h6" style={{ color: "#8a8a8a" }}>
+										{icon.name}
+									</Typography>
+									{(icon.name === "VUE") | (icon.name === "REACT") | (icon.name === "BOOTSTRAP") ? (
+										<FontAwesomeIcon icon={icon.icon} size="6x" style={{ color: icon.color }} />
+									) : (
+										<span>
+											{icon.name !== "REACT-BOOTSRAP" ? (
+												<object
+													data={icon.icon}
+													type="image/svg+xml"
+													width="95px"
+													height="95px"
+													alt="dd">
+													dddd
+												</object>
+											) : (
+												<img src={icon.icon} alt="d" width="95px" height="95px" />
+											)}
+										</span>
+									)}
+								</div>
 							</Zoom>
 						</Grid>
 					))}
