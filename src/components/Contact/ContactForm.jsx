@@ -21,13 +21,13 @@ function ContactForm({ handleChange, handleSubmit, values }) {
 			<ThemeProvider theme={theme}>
 				<Box mt={3.3}>
 					<Box align="left" mb={1.3}>
-						<Typography component="h1" variant="h4" style={{ color: "#cacaca" }}>
+						<Typography component="h1" variant="h4" className={classes.title}>
 							Get in touch
 						</Typography>
-						<Typography component="h3" variant="h6" style={{ color: "#8a8a8a" }}>
+						<Typography component="h3" variant="h6" className={classes.text}>
 							Would like to know more!
 						</Typography>
-						<Typography variant="body2" style={{ color: "#8a8a8a" }}>
+						<Typography variant="body2" className={classes.text}>
 							Interested in my work? <br />
 							Have a project that could use my skills?
 							<br />

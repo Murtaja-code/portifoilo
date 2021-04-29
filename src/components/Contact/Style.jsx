@@ -1,6 +1,6 @@
 import { makeStyles, createMuiTheme } from "@material-ui/core/styles"
 
-const useStyles = makeStyles({})
+const useStyles = makeStyles({ title: { color: "#cacaca" }, text: { color: "#8a8a8a" } })
 
 export default useStyles
 
