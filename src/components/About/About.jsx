@@ -56,7 +56,7 @@ function About() {
 	}
 	return (
 		<Container>
-			<Box pt={20}>
+			<Box pt={10}>
 				{/* languages*/}
 				{topText("Languages I speak", 300)}
 				<Grid container justify="center" spacing={2}>

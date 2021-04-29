@@ -1,6 +1,10 @@
 import { makeStyles } from "@material-ui/core/styles"
 
 const useStyles = makeStyles({
+	onTop: {
+		position: "relative",
+		zIndex: 99
+	},
 	active: {
 		color: "#afafaf"
 	},

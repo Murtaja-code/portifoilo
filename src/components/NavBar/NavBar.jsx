@@ -13,7 +13,7 @@ import {
 import { Menu, Close, Facebook, GitHub, LinkedIn, Twitter } from "@material-ui/icons"
 import useStyles from "./Style"
 import Fade from "react-reveal/Fade"
-import { Link } from "react-router-dom"
+import { Link, useLocation } from "react-router-dom"
 
 const tabs = [
 	{ tab: "Home", delay: 100, link: "/" },
@@ -25,6 +25,8 @@ function NavBar() {
 	const classes = useStyles()
 	const [openDrawer, setOpenDrawer] = useState(false)
 	const mobile = useMediaQuery("(max-width: 700px)")
+	const location = useLocation()
+
 	const handleDrawer = () => {
 		setOpenDrawer(!openDrawer)
 	}
@@ -32,10 +34,10 @@ function NavBar() {
 		setOpenDrawer(!openDrawer)
 	}
 	return (
-		<Box>
+		<Box className={classes.onTop}>
 			<div style={{ overflow: "hidden" }}>
 				<Fade left delay={500}>
-					<div style={{ position: "relative", zIndex: 99 }}>
+					<div>
 						<Link to="/work">
 							<Button className={classes.projectBtn} variant="contained" color="primary">
 								My Projects
@@ -69,7 +71,7 @@ function NavBar() {
 									<Fade left delay={tab.delay}>
 										<Typography
 											variant="h3"
-											className={window.location.pathname === tab.link ? classes.active : ""}>
+											className={location.pathname === tab.link ? classes.active : ""}>
 											{tab.tab}
 										</Typography>
 									</Fade>
@@ -87,6 +89,7 @@ export default NavBar
 
 function SocialMedia({ mobile, handleDrawer }) {
 	const classes = useStyles()
+	const location = useLocation()
 	const icons = [
 		{
 			icon: <GitHub style={{ color: "#4078c0" }} className={classes.socialIcons} />,
@@ -111,13 +114,15 @@ function SocialMedia({ mobile, handleDrawer }) {
 	]
 	return (
 		<div className={classes.socialIconsMobile}>
-			{icons.map((icon, i) => (
-				<IconButton key={i}>
-					<Fade top delay={icon.delay}>
-						<a href={icon.url}>{icon.icon}</a>
-					</Fade>
-				</IconButton>
-			))}
+			{(location.pathname !== "/about") | !mobile
+				? icons.map((icon, i) => (
+						<IconButton key={i}>
+							<Fade top delay={icon.delay}>
+								<a href={icon.url}>{icon.icon}</a>
+							</Fade>
+						</IconButton>
+				  ))
+				: ""}
 			{mobile && (
 				<IconButton onClick={handleDrawer}>
 					<Fade top delay={3000}>
