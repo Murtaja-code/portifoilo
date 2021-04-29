@@ -68,7 +68,7 @@ function Work() {
 	return (
 		<Container>
 			<ThemeProvider theme={theme}>
-				<Box mt={12} style={{ overflow: "hidden" }}>
+				<Box mt={12} className={classes.overflow}>
 					<Typography className={classes.topText} variant="h4">
 						<Bounce left cascade>
 							My Latest projects
