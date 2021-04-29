@@ -12,7 +12,7 @@ const CardData = [
 		tools: ["CSS", "HTML", "JavaScrip", "React", "React-Bootstrap"],
 		link: "https://findyours.netlify.app/",
 		repo: "https://github.com/murtaja1/find_yours",
-		delay: 500
+		delay: 1000
 	},
 	{
 		img: iraqiStudent,
@@ -22,7 +22,7 @@ const CardData = [
 		tools: ["CSS", "HTML", "JavaScrip", "vue", "Vue-Bootstrap", "python", "django"],
 		link: "https://iraqistudent.netlify.app/",
 		repo: "https://github.com/murtaja1/iraqi-student-frontend",
-		delay: 800
+		delay: 1200
 	},
 	{
 		img: weather,
@@ -32,7 +32,7 @@ const CardData = [
 		tools: ["CSS", "HTML", "JavaScrip", "React", "React-Bootstrap"],
 		link: "https://weatherapp-cpp-team.netlify.app/",
 		repo: "https://github.com/murtaja1/weather_app_js",
-		delay: 1000
+		delay: 1400
 	},
 	{
 		img: collageScore,
@@ -42,7 +42,7 @@ const CardData = [
 		tools: ["CSS", "HTML", "JavaScrip", "VUE", "Vue-Bootstrap"],
 		link: "https://murtaja1.github.io/collage_score/",
 		repo: "https://github.com/murtaja1/collage_score",
-		delay: 1200
+		delay: 1600
 	}
 ]
 
