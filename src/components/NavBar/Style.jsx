@@ -51,9 +51,10 @@ const useStyles = makeStyles({
 		}
 	},
 	mobileMenuIcon: {
+		marginTop: "8px",
 		color: "#8a8a8a",
 		background: "#232323",
-		fontSize: "35px",
+		fontSize: "30px",
 		padding: "5px",
 		borderRadius: "50%",
 		transition: "transform .2s",
