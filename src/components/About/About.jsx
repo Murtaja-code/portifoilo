@@ -30,9 +30,7 @@ function About() {
 									<Typography variant="h6" className={classes.mainColor}>
 										{icon.name}
 									</Typography>
-									{icon.name !== "TYPESCRITP" ? (
-										<FontAwesomeIcon icon={icon.icon} size="6x" style={{ color: icon.color }} />
-									) : (
+									{icon.name === "TYPESCRITP" || icon.name === "POSTGRES" ? (
 										<object
 											data={icon.icon}
 											type="image/svg+xml"
@@ -41,6 +39,8 @@ function About() {
 											alt="dd">
 											dddd
 										</object>
+									) : (
+										<FontAwesomeIcon icon={icon.icon} size="6x" style={{ color: icon.color }} />
 									)}
 								</div>
 							</Zoom>
