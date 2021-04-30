@@ -51,9 +51,10 @@ const useStyles = makeStyles({
 		}
 	},
 	mobileMenuIcon: {
+		marginTop: "8px",
 		color: "#8a8a8a",
 		background: "#232323",
-		fontSize: "35px",
+		fontSize: "30px",
 		padding: "5px",
 		borderRadius: "50%",
 		transition: "transform .2s",
@@ -61,7 +62,19 @@ const useStyles = makeStyles({
 			transform: "scale(1.2)"
 		}
 	},
+	contactMenuIcon: {
+		fontSize: "40px"
+	},
 	"@media (max-width: 700px)": {
+		projectBtn: {
+			position: "fixed",
+			zIndex: "99 !important",
+			top: "40px",
+			right: "-199px",
+			transform: "rotate(50deg)",
+			width: "500px",
+			height: "40px"
+		},
 		socialIconsMobile: {
 			position: "fixed",
 			bottom: 0,

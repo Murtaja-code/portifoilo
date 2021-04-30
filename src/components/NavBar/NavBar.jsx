@@ -10,11 +10,18 @@ import {
 	Typography,
 	useMediaQuery
 } from "@material-ui/core"
-import { Menu, Close, Facebook, GitHub, LinkedIn, Twitter } from "@material-ui/icons"
+import { Menu, Close } from "@material-ui/icons"
 import useStyles from "./Style"
 import Fade from "react-reveal/Fade"
 import { Link, useLocation } from "react-router-dom"
 import { tabs } from "./Data"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import {
+	faFacebookSquare,
+	faGithubSquare,
+	faLinkedin,
+	faTwitterSquare
+} from "@fortawesome/free-brands-svg-icons"
 
 function NavBar() {
 	const classes = useStyles()
@@ -87,26 +94,51 @@ function SocialMedia({ mobile, handleDrawer }) {
 	const location = useLocation()
 	const icons = [
 		{
-			icon: <GitHub style={{ color: "#4078c0" }} className={classes.socialIcons} />,
+			icon: (
+				<FontAwesomeIcon
+					style={{ color: "#4078c0" }}
+					className={classes.socialIcons}
+					icon={faGithubSquare}
+				/>
+			),
 			url: "https://github.com/murtaja1",
 			delay: 2500
 		},
 		{
-			icon: <LinkedIn style={{ color: "#0e76a8 " }} className={classes.socialIcons} />,
+			icon: (
+				<FontAwesomeIcon
+					style={{ color: "#4078c0" }}
+					className={classes.socialIcons}
+					icon={faLinkedin}
+				/>
+			),
 			url: "https://www.linkedin.com/in/murtaja-adnan-2a02b9206/",
 			delay: 2700
 		},
 		{
-			icon: <Twitter style={{ color: "#1DA1F2" }} className={classes.socialIcons} />,
+			icon: (
+				<FontAwesomeIcon
+					style={{ color: "#4078c0" }}
+					className={classes.socialIcons}
+					icon={faTwitterSquare}
+				/>
+			),
 			url: "https://twitter.com/murtj14",
 			delay: 2800
 		},
 		{
-			icon: <Facebook style={{ color: "#4267B2" }} className={classes.socialIcons} />,
+			icon: (
+				<FontAwesomeIcon
+					style={{ color: "#4078c0" }}
+					className={classes.socialIcons}
+					icon={faFacebookSquare}
+				/>
+			),
 			url: "https://www.facebook.com/murtaja.adnan.52",
 			delay: 2900
 		}
 	]
+	const check = location.pathname === "/contact"
 	return (
 		<div className={classes.socialIconsMobile}>
 			{(location.pathname !== "/about") | !mobile
@@ -121,7 +153,7 @@ function SocialMedia({ mobile, handleDrawer }) {
 			{mobile && (
 				<IconButton onClick={handleDrawer}>
 					<Fade top delay={3000}>
-						<Menu className={classes.mobileMenuIcon} />
+						<Menu className={`${classes.mobileMenuIcon} ${check && classes.contactMenuIcon}`} />
 					</Fade>
 				</IconButton>
 			)}
