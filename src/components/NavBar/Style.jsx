@@ -62,7 +62,19 @@ const useStyles = makeStyles({
 			transform: "scale(1.2)"
 		}
 	},
+	contactMenuIcon: {
+		fontSize: "40px"
+	},
 	"@media (max-width: 700px)": {
+		projectBtn: {
+			position: "fixed",
+			zIndex: "99 !important",
+			top: "40px",
+			right: "-199px",
+			transform: "rotate(50deg)",
+			width: "500px",
+			height: "40px"
+		},
 		socialIconsMobile: {
 			position: "fixed",
 			bottom: 0,

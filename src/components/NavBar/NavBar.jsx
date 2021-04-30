@@ -10,7 +10,7 @@ import {
 	Typography,
 	useMediaQuery
 } from "@material-ui/core"
-import { Menu, Close, Facebook, GitHub, LinkedIn, Twitter } from "@material-ui/icons"
+import { Menu, Close } from "@material-ui/icons"
 import useStyles from "./Style"
 import Fade from "react-reveal/Fade"
 import { Link, useLocation } from "react-router-dom"
@@ -138,6 +138,7 @@ function SocialMedia({ mobile, handleDrawer }) {
 			delay: 2900
 		}
 	]
+	const check = location.pathname === "/contact"
 	return (
 		<div className={classes.socialIconsMobile}>
 			{(location.pathname !== "/about") | !mobile
@@ -152,7 +153,7 @@ function SocialMedia({ mobile, handleDrawer }) {
 			{mobile && (
 				<IconButton onClick={handleDrawer}>
 					<Fade top delay={3000}>
-						<Menu className={classes.mobileMenuIcon} />
+						<Menu className={`${classes.mobileMenuIcon} ${check && classes.contactMenuIcon}`} />
 					</Fade>
 				</IconButton>
 			)}
