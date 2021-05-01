@@ -41,7 +41,7 @@ function Work() {
 					<CardActions>
 						<a href={project.link} className={classes.link}>
 							<Button variant="contained" size="small" color="primary">
-								Live
+								Preview
 							</Button>
 						</a>
 						<a href={project.repo} className={classes.link}>
