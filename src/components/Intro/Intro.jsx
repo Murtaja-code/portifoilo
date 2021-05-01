@@ -37,15 +37,15 @@ function Intro() {
 							type="mask-top"
 							duration={(e) => {
 								if (e.index === 2) {
-									return 500
+									return 100
 								}
 								return 1000
 							}}
 							interval={(e) => {
 								if (e.index === 2) {
-									return 1000
+									return 500
 								}
-								return e.index * 50
+								return e.index * 20
 							}}>
 							I am a full-stack Web Developer passionate about web development and striving to make
 							an impact on what I work on. Well-versed in modern JavaScrip frameworks.
@@ -53,7 +53,7 @@ function Intro() {
 					</Typography>
 				</Grid>
 				<Grid item xs={12}>
-					<Zoom delay={7000}>
+					<Zoom delay={3000}>
 						<Box pt={1.5}>
 							<Button className={classes.CvBtn} variant="contained">
 								<a href={CV} className={classes.a} download>

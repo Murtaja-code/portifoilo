@@ -38,7 +38,7 @@ function NavBar() {
 	return (
 		<Box className={classes.onTop}>
 			<div className={classes.overflow}>
-				<Fade left delay={500}>
+				<Fade left delay={400}>
 					<div>
 						<Link to="/work">
 							<Button className={classes.projectBtn} variant="contained" color="primary">
@@ -50,7 +50,7 @@ function NavBar() {
 			</div>
 			{!mobile && (
 				<>
-					<Fade right delay={1500}>
+					<Fade right delay={500}>
 						<IconButton onClick={handleDrawer}>
 							<Menu className={classes.menuIcon} />
 						</IconButton>
@@ -102,7 +102,7 @@ function SocialMedia({ mobile, handleDrawer }) {
 				/>
 			),
 			url: "https://github.com/murtaja1",
-			delay: 2500
+			delay: 600
 		},
 		{
 			icon: (
@@ -113,7 +113,7 @@ function SocialMedia({ mobile, handleDrawer }) {
 				/>
 			),
 			url: "https://www.linkedin.com/in/murtaja-adnan-2a02b9206/",
-			delay: 2700
+			delay: 700
 		},
 		{
 			icon: (
@@ -124,7 +124,7 @@ function SocialMedia({ mobile, handleDrawer }) {
 				/>
 			),
 			url: "https://twitter.com/murtj14",
-			delay: 2800
+			delay: 800
 		},
 		{
 			icon: (
@@ -135,7 +135,7 @@ function SocialMedia({ mobile, handleDrawer }) {
 				/>
 			),
 			url: "https://www.facebook.com/murtaja.adnan.52",
-			delay: 2900
+			delay: 900
 		}
 	]
 	const check = location.pathname === "/contact"
@@ -152,7 +152,7 @@ function SocialMedia({ mobile, handleDrawer }) {
 				: ""}
 			{mobile && (
 				<IconButton onClick={handleDrawer}>
-					<Fade top delay={3000}>
+					<Fade top delay={1000}>
 						<Menu className={`${classes.mobileMenuIcon} ${check && classes.contactMenuIcon}`} />
 					</Fade>
 				</IconButton>

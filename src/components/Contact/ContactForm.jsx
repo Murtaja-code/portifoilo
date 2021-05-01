@@ -24,16 +24,16 @@ function ContactForm({ handleChange, handleSubmit, values }) {
 				<Box mt={3.3}>
 					<Box align="left" mb={1.3}>
 						<Typography component="h1" variant="h4" className={classes.title}>
-							<Bounce cascade left delay={500}>
+							<Bounce cascade left>
 								Get in touch
 							</Bounce>
 						</Typography>
 						<Typography component="h3" variant="h6" className={classes.text}>
-							<Bounce cascade left delay={800}>
+							<Bounce cascade left delay={100}>
 								Would like to know more!
 							</Bounce>
 						</Typography>
-						<Bounce cascade left delay={1000}>
+						<Bounce cascade left delay={200}>
 							<Typography variant="body2" className={classes.text}>
 								Interested in my work?
 								<br />
@@ -51,7 +51,7 @@ function ContactForm({ handleChange, handleSubmit, values }) {
 					<form onSubmit={handleSubmit}>
 						<Grid container spacing={2} direction="row" justify="space-around">
 							<Grid item xs={12} sm={6}>
-								<Fade delay={1200} left>
+								<Fade delay={300} left>
 									<TextField
 										value={firstName}
 										onChange={(e) => handleChange(e)}
@@ -68,7 +68,7 @@ function ContactForm({ handleChange, handleSubmit, values }) {
 							</Grid>
 
 							<Grid item xs={12} sm={6}>
-								<Fade delay={1200} right>
+								<Fade delay={400} right>
 									<TextField
 										value={lastName}
 										onChange={(e) => handleChange(e)}
@@ -83,7 +83,7 @@ function ContactForm({ handleChange, handleSubmit, values }) {
 								</Fade>
 							</Grid>
 							<Grid item xs={12}>
-								<Fade delay={1400} left>
+								<Fade delay={500} left>
 									<TextField
 										value={email}
 										onChange={(e) => handleChange(e)}
@@ -98,7 +98,7 @@ function ContactForm({ handleChange, handleSubmit, values }) {
 								</Fade>
 							</Grid>
 							<Grid item xs={12}>
-								<Fade delay={1600} right>
+								<Fade delay={600} right>
 									<TextField
 										value={text}
 										onChange={(e) => handleChange(e)}
@@ -115,7 +115,7 @@ function ContactForm({ handleChange, handleSubmit, values }) {
 								</Fade>
 							</Grid>
 							<Grid item xs={12}>
-								<Fade delay={1800} left>
+								<Fade delay={700} left>
 									<Button type="submit" color="primary" variant="contained">
 										submit
 									</Button>
