@@ -21,7 +21,7 @@ function About() {
 		<Container>
 			<Box pt={10}>
 				{/* languages*/}
-				{topText("Languages I speak", 300)}
+				{topText("Languages I speak", 100)}
 				<Grid container justify="center" spacing={2}>
 					{languages.map((icon, i) => (
 						<Grid key={i} item xs={6} sm={4} md={3} className={classes.scale}>
@@ -48,7 +48,7 @@ function About() {
 					))}
 				</Grid>
 				{/* frameworks */}
-				<Box mt={4}>{topText("Tools I use", 1200)}</Box>
+				<Box mt={4}>{topText("Tools I use", 600)}</Box>
 				<Grid container justify="center" spacing={2}>
 					{frameworks.map((icon, i) => (
 						<Grid key={i} item xs={6} sm={4} md={3} className={classes.scale}>
