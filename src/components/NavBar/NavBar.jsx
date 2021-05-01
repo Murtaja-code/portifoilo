@@ -145,7 +145,9 @@ function SocialMedia({ mobile, handleDrawer }) {
 				? icons.map((icon, i) => (
 						<IconButton key={i}>
 							<Fade top delay={icon.delay}>
-								<a href={icon.url}>{icon.icon}</a>
+								<a target="_blank" href={icon.url}>
+									{icon.icon}
+								</a>
 							</Fade>
 						</IconButton>
 				  ))
