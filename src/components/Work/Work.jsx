@@ -39,12 +39,12 @@ function Work() {
 						</CardContent>
 					</CardActionArea>
 					<CardActions>
-						<a target="_blank" href={project.link} className={classes.link}>
+						<a target="_blank" rel="noreferrer" href={project.link} className={classes.link}>
 							<Button variant="contained" size="small" color="primary">
 								Preview
 							</Button>
 						</a>
-						<a target="_blank" href={project.repo} className={classes.link}>
+						<a target="_blank" rel="noreferrer" href={project.repo} className={classes.link}>
 							<Button variant="contained" size="small" color="primary">
 								Repo
 							</Button>
