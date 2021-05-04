@@ -12,6 +12,7 @@ const useStyles = makeStyles({
 		color: "#afafaf"
 	},
 	socialIcons: {
+		color: "#4078c0",
 		fontSize: "40px",
 		transition: "transform .2s",
 		"&:hover": {

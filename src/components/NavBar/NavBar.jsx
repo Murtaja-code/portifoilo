@@ -94,46 +94,22 @@ function SocialMedia({ mobile, handleDrawer }) {
 	const location = useLocation()
 	const icons = [
 		{
-			icon: (
-				<FontAwesomeIcon
-					style={{ color: "#4078c0" }}
-					className={classes.socialIcons}
-					icon={faGithubSquare}
-				/>
-			),
+			icon: <FontAwesomeIcon className={classes.socialIcons} icon={faGithubSquare} />,
 			url: "https://github.com/murtaja1",
 			delay: 600
 		},
 		{
-			icon: (
-				<FontAwesomeIcon
-					style={{ color: "#4078c0" }}
-					className={classes.socialIcons}
-					icon={faLinkedin}
-				/>
-			),
+			icon: <FontAwesomeIcon className={classes.socialIcons} icon={faLinkedin} />,
 			url: "https://www.linkedin.com/in/murtaja-adnan-2a02b9206/",
 			delay: 700
 		},
 		{
-			icon: (
-				<FontAwesomeIcon
-					style={{ color: "#4078c0" }}
-					className={classes.socialIcons}
-					icon={faTwitterSquare}
-				/>
-			),
+			icon: <FontAwesomeIcon className={classes.socialIcons} icon={faTwitterSquare} />,
 			url: "https://twitter.com/murtj14",
 			delay: 800
 		},
 		{
-			icon: (
-				<FontAwesomeIcon
-					style={{ color: "#4078c0" }}
-					className={classes.socialIcons}
-					icon={faFacebookSquare}
-				/>
-			),
+			icon: <FontAwesomeIcon className={classes.socialIcons} icon={faFacebookSquare} />,
 			url: "https://www.facebook.com/murtaja.adnan.52",
 			delay: 900
 		}
