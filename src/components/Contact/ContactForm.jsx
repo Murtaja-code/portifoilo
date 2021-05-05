@@ -21,7 +21,7 @@ function ContactForm({ handleChange, handleSubmit, values }) {
 		<Container maxWidth="md">
 			<CssBaseline />
 			<ThemeProvider theme={theme}>
-				<Box mt={3.3}>
+				<Box mt={3.3} mb={2}>
 					<Box align="left" mb={1.3}>
 						<Typography component="h1" variant="h4" className={classes.title}>
 							<Bounce cascade left>
