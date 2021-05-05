@@ -9,8 +9,6 @@ import Contact from "./Contact"
 import { BrowserRouter, Switch, Route } from "react-router-dom"
 
 function Container() {
-	const [index, setIndex] = useState(0)
-
 	return (
 		<div style={{ overflow: "hidden" }}>
 			<BrowserRouter>
@@ -25,7 +23,7 @@ function Container() {
 					}}
 					params={particlesConfig}
 				/>
-				<NavBar setIndex={setIndex} index={index} />
+				<NavBar />
 				<Switch>
 					<Route exact path="/" component={Intro} />
 					<Route path="/work" component={Work} />
