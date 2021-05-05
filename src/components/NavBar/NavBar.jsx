@@ -116,7 +116,8 @@ function SocialMedia({ mobile, handleDrawer }) {
 	]
 	const check = location.pathname === "/contact"
 	return (
-		<div className={classes.socialIconsMobile}>
+		// hide only for contact url.
+		<div className={`${!check && classes.socialIconsMobile}`}>
 			{(location.pathname !== "/about") | !mobile
 				? icons.map((icon, i) => (
 						<IconButton key={i}>
