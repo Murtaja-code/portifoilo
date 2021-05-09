@@ -16,7 +16,8 @@ const useStyles = makeStyles({
 		fontSize: "40px",
 		transition: "transform .2s",
 		"&:hover": {
-			transform: "scale(1.4)"
+			transform: "scale(1.4)",
+			"-webkit-transform": "scale(1.4)"
 		}
 	},
 	paper: {
@@ -33,6 +34,7 @@ const useStyles = makeStyles({
 	},
 	projectBtn: {
 		position: "fixed",
+		transform: "translate3d(0px, 0px, 0px)",
 		zIndex: "99 !important",
 		top: "85px",
 		right: "-160px",
@@ -48,7 +50,8 @@ const useStyles = makeStyles({
 		right: "25px",
 		transition: "transform .2s",
 		"&:hover": {
-			transform: "scale(1.2)"
+			transform: "scale(1.2)",
+			"-webkit-transform": "scale(1.2)"
 		}
 	},
 	mobileMenuIcon: {
@@ -60,7 +63,8 @@ const useStyles = makeStyles({
 		borderRadius: "50%",
 		transition: "transform .2s",
 		"&:hover": {
-			transform: "scale(1.2)"
+			transform: "scale(1.2)",
+			"-webkit-transform": "scale(1.2)"
 		}
 	},
 	contactMenuIcon: {

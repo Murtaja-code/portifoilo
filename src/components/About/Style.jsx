@@ -4,7 +4,8 @@ const useStyles = makeStyles({
 	scale: {
 		transition: "transform .2s",
 		"&:hover": {
-			transform: "scale(1.3)"
+			transform: "scale(1.3)",
+			"-webkit-transform": "scale(1.3)"
 		}
 	},
 	mainColor: {
