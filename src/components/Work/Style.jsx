@@ -37,7 +37,8 @@ export const theme = createMuiTheme({
 			root: {
 				transition: "transform .2s",
 				"&:hover": {
-					transform: "scale(1.05)"
+					transform: "scale(1.05)",
+					"-webkit-transform": "scale(1.05)"
 				},
 				"&:hover .card": {
 					opacity: "30%"
