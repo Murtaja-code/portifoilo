@@ -28,7 +28,7 @@ const CardData = [
 		img: weather,
 		title: "Weather",
 		descrption:
-			"A user-friendly web application that tells you the weather status for today and forcasts for the next five days only by typing your location.",
+			"A user-friendly web application that tells you the weather status for today and forecasts for the next five days only by typing your location.",
 		tools: ["JavaScrip", "React", "React-Bootstrap", "CSS", "HTML"],
 		link: "https://weatherapp-cpp-team.netlify.app/",
 		repo: "https://github.com/murtaja1/weather_app_js",
