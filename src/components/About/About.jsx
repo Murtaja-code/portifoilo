@@ -30,7 +30,9 @@ function About() {
 									<Typography variant="h6" className={classes.mainColor}>
 										{icon.name}
 									</Typography>
-									{icon.name === "TYPESCRITP" || icon.name === "POSTGRES" ? (
+									{icon.name === "TYPESCRITP" ||
+									icon.name === "POSTGRES" ||
+									icon.name === "Firebase" ? (
 										<object
 											data={icon.icon}
 											type="image/svg+xml"

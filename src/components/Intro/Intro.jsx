@@ -9,7 +9,7 @@ function Intro() {
 	const classes = useStyles()
 
 	return (
-		<Box mt={27}>
+		<Box mt={13}>
 			<Grid container direction="row" justify="center" alignItems="center">
 				<Grid item xs={12}>
 					<TextyAnim
@@ -45,16 +45,19 @@ function Intro() {
 								if (e.index === 2) {
 									return 500
 								}
-								return e.index * 20
+								return e.index * 10
 							}}>
-							I am a full-stack Web Developer passionate about web development and striving to make
-							an impact on what I work on. Well-versed in modern JavaScrip frameworks.
+							I am a detail oriented full stack Web developer who is always up to date with modern
+							technologies and with skills in communication and leadership.. I have experience in
+							problem-solving, building rest APIs using Django, developing UI and making them alive
+							in the browsers using React.js and Vue.js with a background in developing education
+							related web applications.
 						</TextyAnim>
 					</Typography>
 				</Grid>
 				<Grid item xs={12}>
 					<Zoom delay={3000}>
-						<Box pt={1.5}>
+						<Box pt={1.5} mb={10}>
 							<Button className={classes.CvBtn} variant="contained">
 								<a href={CV} className={classes.a} download>
 									Download my CV
