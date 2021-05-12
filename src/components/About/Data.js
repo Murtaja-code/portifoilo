@@ -17,7 +17,7 @@ import redux from "../../assets/redux.svg"
 import reactb from "../../assets/reactb.js"
 import typescript from "../../assets/typescript.svg"
 import postgres from "../../assets/postgres.svg"
-
+import firebase from "../../assets/firebase.svg"
 export const languages = [
 	{ icon: faPython, name: "PYTHON", color: "306998", delay: 100 },
 	{ icon: faJs, name: "JAVASCRIPT", color: "#f0db4f", delay: 150 },
@@ -25,7 +25,8 @@ export const languages = [
 	{ icon: faHtml5, name: "HTML5", color: "#e34f26", delay: 250 },
 	{ icon: faCss3, name: "CSS3", color: "#264de4", delay: 300 },
 	{ icon: postgres, name: "POSTGRES", color: "#e34f26", delay: 350 },
-	{ icon: faDatabase, name: "SQL", color: "#0048BA", delay: 400 }
+	{ icon: faDatabase, name: "SQL", color: "#0048BA", delay: 400 },
+	{ icon: firebase, name: "Firebase", color: "#0048BA", delay: 430 }
 ]
 
 export const frameworks = [
