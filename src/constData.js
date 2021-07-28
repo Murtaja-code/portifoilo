@@ -9,7 +9,7 @@ const CardData = [
 		title: "Find Yours",
 		descrption:
 			"With its unique idea, Find Yours is a web application that helps people find their lost items and allow others to share the items they find.",
-		tools: ["JavaScrip", "React.js", "React-Bootstrap", "CSS", "HTML", "Firebase"],
+		tools: ["JavaScrip", "React.js", "Material Ui", "CSS", "HTML", "Firebase"],
 		link: "https://findyours.netlify.app/",
 		repo: "https://github.com/murtaja1/find_yours",
 		delay: 1000
